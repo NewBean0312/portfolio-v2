@@ -1,4 +1,5 @@
-import MainPage from "./pages/MainPage.js";
+import React from "react";
+import MainPage from "./pages/MainPage.jsx";
 
 function App() {
   return (
