@@ -4,6 +4,29 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "LibreBaskerville";
-  src: url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+  font-family: "DNFForgedBladeLight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Light.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "DNFForgedBladeNormal";
+  font-style: normal;
+  font-weight: 500;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Medium.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "DNFForgedBladeBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFForgedBlade-Bold.otf")
+    format("opentype");
+}
+
+html {
+  font-family: "Libre Baskerville", serif;
 }

@@ -11,8 +11,10 @@ module.exports = {
       focusColor: "#023df7",
     },
     fontFamily: {
-      LibreBaskerville: [`"Libre Baskerville", serif`],
-    },
+      DNFForgedBladeLight: ["DNFForgedBladeLight"],
+      DNFForgedBladeNormal: ["DNFForgedBladeNormal"],
+      DNFForgedBladeBold: ["DNFForgedBladeBold"],
+    }
   },
   plugins: [],
 };
