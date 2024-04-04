@@ -28,7 +28,7 @@ const Typing = () => {
     const interVal = setInterval(() => {
       // 글자 하나 씩 넣기
       if (j < secondContent.length) {
-        setSecondText((secondText) => secondText + secondContent.charAt(i));
+        setSecondText((secondText) => secondText + secondContent.charAt(j));
         setJ((j) => j + 1);
       } else {
         // 전부 출력 시, interval 중지

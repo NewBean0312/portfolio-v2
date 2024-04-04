@@ -21,7 +21,7 @@ function MultipleSnowFlake({ count }) {
         className="absolute -top-8 h-full text-snowFlake"
         id="snowflake"
       >
-        <FontAwesomeIcon icon={faMusic} spin style={{ fontSize: sizes }} />
+        <FontAwesomeIcon icon={faMusic} spin spinReverse style={{ fontSize: sizes }} />
       </div>
     );
   });
