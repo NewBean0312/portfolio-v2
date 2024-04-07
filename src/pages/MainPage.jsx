@@ -11,7 +11,6 @@ const MainPage = () => {
       <main>
         <Typing />
         <SnowBox />
-        <MainMenuBar />
       </main>
     </>
   );

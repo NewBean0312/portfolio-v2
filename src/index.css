@@ -205,15 +205,33 @@ html {
 }
 /* // snowFlake CSS */
 
-/* whiteKeyBoard CSS */
+/* boxGroup CSS */
 #boxGroup:first-child > #whiteKeyBoard:first-child {
   border-left: none;
 }
 
-#boxGroup:last-child > #whiteKeyBoard:nth-child(7) {
+#boxGroupMenu > #whiteKeyBoard:nth-child(7) {
   border-right: none;
 }
-/* // whiteKeyBoard CSS */
+
+@media screen and (max-width: 500px) {
+  #boxGroup:nth-child(1) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #boxGroup:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #boxGroup:nth-child(3) {
+    display: none;
+  }
+}
+/* // boxGroup CSS */
 
 /* whiteKeyBoard animation */
 @keyframes keyboard-wave {
@@ -280,10 +298,10 @@ html {
 /* 메인 메뉴 건반 animation */
 #animation {
   visibility: hidden;
-  transition: color 0.2s, transform 2s;
+  transition: color 1.5s, transform 2s;
 }
 
-#whiteKeyBoard:hover > #animation {
+#whiteKeyBoard:hover #animation {
   z-index: 10;
   visibility: visible;
   transform: translateY(-40px);
@@ -291,5 +309,13 @@ html {
 }
 /* // 메인 메뉴 건반 animation */
 
-/* whiteKeyBoard animation */
-/* // whiteKeyBoard animation */
+/* boxGroupMenu media css */
+@media screen and (max-width: 500px) {
+  #boxGroupMenu #whiteKeyBoard:first-child {
+    border-left: none;
+  }
+
+  #animation {
+    display: none;
+  }
+}

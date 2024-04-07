@@ -7,6 +7,7 @@ module.exports = {
       transparent: "transparent",
       mainColor: "#416d83",
       backgroundColor: "#f3f4e9",
+      mainButtonTextColor: "#f8efce",
       textColor: "#122a70",
       focusColor: "#023df7",
       snowFlake: "#49635550",

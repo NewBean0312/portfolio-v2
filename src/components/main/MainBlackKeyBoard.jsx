@@ -1,6 +1,6 @@
 import React from "react";
 
-const MainBlakcKeyBoard = () => {
+const MainBlackKeyBoard = () => {
   const leftPositions = ["9.97%", "23.9%", "52.5%", "66.8%", "80.8%"];
 
   return (
@@ -16,4 +16,4 @@ const MainBlakcKeyBoard = () => {
   );
 };
 
-export default MainBlakcKeyBoard;
+export default MainBlackKeyBoard;

@@ -1,6 +1,7 @@
 import React from "react";
 import MainWhiteKeyBoard from "./MainWhiteKeyBoard";
-import MainBlakcKeyBoard from "./MainBlackKeyBoard";
+import MainBlackKeyBoard from "./MainBlackKeyBoard";
+import MainWhiteKeyBoardMenu from "./MainWhiteKeyBoardMenu";
 
 function BoxGroup() {
   const mainWhiteBoxs = Array.from({ length: 7 }, (_, index) => (
@@ -10,7 +11,16 @@ function BoxGroup() {
   return (
     <div className="flex items-end relative flex-grow" id="boxGroup">
       {mainWhiteBoxs}
-      <MainBlakcKeyBoard />
+      <MainBlackKeyBoard />
+    </div>
+  );
+}
+
+function BoxGroupMenu() {
+  return (
+    <div className="flex items-end relative flex-grow" id="boxGroupMenu">
+      <MainWhiteKeyBoardMenu />
+      <MainBlackKeyBoard />
     </div>
   );
 }
@@ -21,7 +31,7 @@ const MainMenuBar = () => {
       <BoxGroup />
       <BoxGroup />
       <BoxGroup />
-      <BoxGroup />
+      <BoxGroupMenu />
     </div>
   );
 };
