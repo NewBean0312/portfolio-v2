@@ -39,7 +39,7 @@ const Typing = () => {
   }, [j, secondContent.length]);
 
   return (
-    <div className="mt-12 font-DNFForgedBladeNormal text-lg text-2xl text-mainColor text-center select-none">
+    <div className="mt-12 font-DNFForgedBladeNormal text-lg md:text-2xl text-mainColor text-center select-none">
       <div>
         <span id="text-1">{firstText}</span>
       </div>

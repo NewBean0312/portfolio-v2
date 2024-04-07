@@ -3,7 +3,7 @@ import MainWhiteKeyBoard from "./MainWhiteKeyBoard";
 import MainBlackKeyBoard from "./MainBlackKeyBoard";
 import MainWhiteKeyBoardMenu from "./MainWhiteKeyBoardMenu";
 
-function BoxGroup() {
+function MainBoxGroup() {
   const mainWhiteBoxs = Array.from({ length: 7 }, (_, index) => (
     <MainWhiteKeyBoard key={index} />
   ));
@@ -16,7 +16,7 @@ function BoxGroup() {
   );
 }
 
-function BoxGroupMenu() {
+function MainBoxGroupMenu() {
   return (
     <div className="flex items-end relative flex-grow" id="boxGroupMenu">
       <MainWhiteKeyBoardMenu />
@@ -28,10 +28,10 @@ function BoxGroupMenu() {
 const MainMenuBar = () => {
   return (
     <div className="flex absolute bottom-0 w-full h-72 select-none">
-      <BoxGroup />
-      <BoxGroup />
-      <BoxGroup />
-      <BoxGroupMenu />
+      <MainBoxGroup />
+      <MainBoxGroup />
+      <MainBoxGroup />
+      <MainBoxGroupMenu />
     </div>
   );
 };

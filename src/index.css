@@ -319,3 +319,25 @@ html {
     display: none;
   }
 }
+/* // boxGroupMenu media css */
+
+/* menuBar transition */
+#menuBar {
+  transition: height 0.5s;
+}
+/* // menuBar transition */
+
+/* buttonNav transition */
+#buttonNav {
+  transition: opacity 1.5s;
+}
+
+#menuBar:hover #buttonNav {
+  visibility: visible;
+  opacity: 1;
+  top: 40%;
+}
+
+#menuBar:hover #menuBarIcon {
+  visibility: hidden;
+}

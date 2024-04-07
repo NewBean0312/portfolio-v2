@@ -9,7 +9,7 @@ const MainMenuButton = ({ buttonText }) => {
         className="flex justify-center w-full h-full"
       >
         <div
-          className="flex justfy-center absolute -top-12 z-10 text-base xl:text-xl  font-bold text-backgroundColor text-center uppercase"
+          className="flex justfy-center absolute -top-12 z-10 text-base xl:text-xl  font-bold text-backgroundColor text-center"
           id="animation"
         >
           {buttonText}
