@@ -63,14 +63,29 @@ const AboutSection = () => {
   ];
 
   const [isHoverd, setIsHoverd] = useState(false); // 마우스 진입 여부
+  const [spanNumber, setSpanNumber] = useState(); // span 넘버
   // 마우스 진입 이벤트
-  const handleMouseEnter = () => {
+  const handleMouseEnter1 = () => {
     setIsHoverd(true);
+    setSpanNumber(0);
   };
 
   // 마우스 이탈 이벤트
-  const handleMouseLeave = () => {
+  const handleMouseLeave1 = () => {
     setIsHoverd(false);
+    setSpanNumber(0);
+  };
+  
+  // 마우스 진입 이벤트
+  const handleMouseEnter2 = () => {
+    setIsHoverd(true);
+    setSpanNumber(1);
+  };
+
+  // 마우스 이탈 이벤트
+  const handleMouseLeave2 = () => {
+    setIsHoverd(false);
+    setSpanNumber(1);
   };
 
   return (
@@ -80,6 +95,8 @@ const AboutSection = () => {
           {images.map((image, index) => (
             <AboutImage
               key={index}
+              imageNumber={index}
+              spanNumber={spanNumber}
               imageSrc={image.src}
               imageAlt={image.alt}
               imageSize={image.size}
@@ -96,9 +113,11 @@ const AboutSection = () => {
           <p className="mt-7 ml-5 font-DNFForgedBladeNormal text-xl">
             안녕하세요!
             <span
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >여행하는 듯한 홈페이지</span>
+              onMouseEnter={handleMouseEnter1}
+              onMouseLeave={handleMouseLeave1}
+            >
+               여행하는 듯한 홈페이지
+            </span>
           </p>
         </article>
       </section>

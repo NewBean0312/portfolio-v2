@@ -1,6 +1,8 @@
 import React from "react";
 
 const AboutImage = ({
+  imageNumber,
+  spanNumber,
   imageSrc,
   imageAlt,
   imageSize,
@@ -8,8 +10,8 @@ const AboutImage = ({
   leftPosition,
   isHoverd,
 }) => {
-  const visibility = isHoverd ? "visible" : "hidden";
-  console.log(isHoverd);
+  const visibility = spanNumber === imageNumber ? (isHoverd ? "visible" : "hidden") : "hidden";
+
   return (
     <div
       className="absolute"
