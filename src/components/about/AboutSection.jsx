@@ -65,27 +65,15 @@ const AboutSection = () => {
   const [isHoverd, setIsHoverd] = useState(false); // 마우스 진입 여부
   const [spanNumber, setSpanNumber] = useState(); // span 넘버
   // 마우스 진입 이벤트
-  const handleMouseEnter1 = () => {
+  const handleMouseEnter = (number) => {
     setIsHoverd(true);
-    setSpanNumber(0);
+    setSpanNumber(number); // span 넘버 설정
   };
 
   // 마우스 이탈 이벤트
-  const handleMouseLeave1 = () => {
+  const handleMouseLeave = () => {
     setIsHoverd(false);
-    setSpanNumber(0);
-  };
-  
-  // 마우스 진입 이벤트
-  const handleMouseEnter2 = () => {
-    setIsHoverd(true);
-    setSpanNumber(1);
-  };
-
-  // 마우스 이탈 이벤트
-  const handleMouseLeave2 = () => {
-    setIsHoverd(false);
-    setSpanNumber(1);
+    setSpanNumber(); // span 넘버 초기화
   };
 
   return (
@@ -110,14 +98,80 @@ const AboutSection = () => {
           <h4 className="mt-10 ml-5 font-DNFForgedBladeLight text-mainColor">
             글씨에 마우스를 갖다 대보세요!
           </h4>
-          <p className="mt-7 ml-5 font-DNFForgedBladeNormal text-xl">
-            안녕하세요!
+          <p className="mt-7 ml-5 font-DNFForgedBladeNormal text-xl text-textColor">
+            안녕하세요!&nbsp;
             <span
-              onMouseEnter={handleMouseEnter1}
-              onMouseLeave={handleMouseLeave1}
+              onMouseEnter={() => handleMouseEnter(0)}
+              onMouseLeave={handleMouseLeave}
+              className="mr-1 font-DNFForgedBladeBold text-xl italic text-mainColor underline"
             >
-               여행하는 듯한 홈페이지
+              여행하는 듯한 홈페이지
             </span>
+            를 만들고자 하는 <br /> 프론트엔드 개발자{" "}
+            <span
+              onMouseEnter={() => handleMouseEnter(1)}
+              onMouseLeave={handleMouseLeave}
+              className="mr-1 font-DNFForgedBladeBold text-xl italic text-mainColor underline"
+            >
+              전유빈
+            </span>
+            입니다.
+            <br />
+            <span className="block h-5"></span>
+            저는 마치 여행하듯 아름답고, 편리한 홈페이지를 만들어,
+            <br />
+            사용자가&nbsp;
+            <span
+              onMouseEnter={() => handleMouseEnter(2)}
+              onMouseLeave={handleMouseLeave}
+              className="mr-1 font-DNFForgedBladeBold text-xl italic text-mainColor underline"
+            >
+              편히 이용하고 다시 찾아줄 수 있는 홈페이지
+            </span>
+            를
+            <br />
+            제작하는 것이 목표이자 신념입니다.
+            <br />
+            <span className="block h-5"></span>
+            <span
+              onMouseEnter={() => handleMouseEnter(3)}
+              onMouseLeave={handleMouseLeave}
+              className="mr-1 font-DNFForgedBladeBold text-xl italic text-mainColor underline"
+            >
+              'Rome was not built in a day'
+            </span>
+            라는 속담이 있듯이,
+            <br />
+            성공이나 목표를 이루는 데에는&nbsp;
+            <span
+              onMouseEnter={() => handleMouseEnter(4)}
+              onMouseLeave={handleMouseLeave}
+              className="mr-1 font-DNFForgedBladeBold text-xl italic text-mainColor underline"
+            >
+              시간과 인내
+            </span>
+            가 필요합니다.
+            <br />
+            <span className="block h-5"></span>
+            저의 장점인&nbsp;
+            <span
+              onMouseEnter={() => handleMouseEnter(5)}
+              onMouseLeave={handleMouseLeave}
+              className="mr-1 font-DNFForgedBladeBold text-xl italic text-mainColor underline hover:text-focusColor"
+            >
+              창의성과 근성
+            </span>
+            을 주 무기로 삼아 꾸준히 공부하고 나아가면서,
+            <br />
+            새로운 것을 계속 시도할 수 있는&nbsp;
+            <span
+              onMouseEnter={() => handleMouseEnter(6)}
+              onMouseLeave={handleMouseLeave}
+              className="mr-1 font-DNFForgedBladeBold text-xl italic text-mainColor underline hover:text-focusColor"
+            >
+              창의적인 개발자
+            </span>
+            로 임하고 싶습니다!
           </p>
         </article>
       </section>
