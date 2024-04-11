@@ -8,7 +8,7 @@ const MenuBarBlackKeyBoard = () => {
       {leftPositions.map((leftPosition, index) => (
         <div
           key={index}
-          className="absolute top-0 h-2/5 bg-mainColor"
+          className="absolute top-0 h-1/3 bg-mainColor"
           style={{ left: leftPosition, width: "9%" }}
         ></div>
       ))}

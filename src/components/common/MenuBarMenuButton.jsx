@@ -28,7 +28,7 @@ const MenuBarMenuButton = ({ buttonText }) => {
       )}
       {buttonText != "Main" && (
         <Link
-          to={`./pages/${buttonText}Page`}
+          to={`./${buttonText}Page`}
           className="flex justify-center w-full h-full text-mainColor"
         >
           <div
