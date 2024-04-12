@@ -78,8 +78,8 @@ const AboutSection = () => {
 
   return (
     <>
-      <section className="flex z-10 relative w-full h-auto m-0">
-        <article className="relative w-1/2 h-full">
+      <section className="flex flex-col lg:flex-row z-10 relative w-full h-auto m-0">
+        <article className="hidden lg:block relative w-1/2 h-full">
           {images.map((image, index) => (
             <AboutImage
               key={index}
@@ -94,11 +94,11 @@ const AboutSection = () => {
             />
           ))}
         </article>
-        <article className="w-1/2 h-full">
-          <h4 className="mt-10 ml-5 font-DNFForgedBladeLight text-mainColor">
+        <article className="w-full lg:w-1/2 h-1/2 lg:h-1/2 h-full">
+          <h4 className="hidden lg:block mt-10 ml-5 font-DNFForgedBladeLight text-mainColor">
             글씨에 마우스를 갖다 대보세요!
           </h4>
-          <p className="mt-7 ml-5 font-DNFForgedBladeNormal text-xl text-textColor">
+          <p className="w-10/12 lg:w-auto mt-7 ml-auto lg:ml-5 mr-auto lg:mr-0 font-DNFForgedBladeNormal text-xl text-textColor text-center lg:text-left">
             안녕하세요!&nbsp;
             <span
               onMouseEnter={() => handleMouseEnter(0)}

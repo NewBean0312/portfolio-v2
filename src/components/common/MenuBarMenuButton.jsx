@@ -21,8 +21,12 @@ const MenuBarMenuButton = ({ buttonText }) => {
               </React.Fragment>
             ))}
           </div>
-          <div className="absolute top-1/2 text-2xl" id="menuBarIcon">
-            <FontAwesomeIcon icon={faM} />
+          <div
+            className="absolute top-1/2 w-full text-sm md:text-2xl text-center"
+            id="menuBarIcon"
+          >
+            <FontAwesomeIcon className="hidden md:inline-block" icon={faM} />
+            <div className="md:invisible">{buttonText}</div>
           </div>
         </Link>
       )}
@@ -41,12 +45,40 @@ const MenuBarMenuButton = ({ buttonText }) => {
               </React.Fragment>
             ))}
           </div>
-          <div className="absolute top-1/2 text-2xl" id="menuBarIcon">
-            {buttonText == "About" && <FontAwesomeIcon icon={faA} />}
-            {buttonText == "Career" && <FontAwesomeIcon icon={faC} />}
-            {buttonText == "Skill" && <FontAwesomeIcon icon={faS} />}
-            {buttonText == "Project" && <FontAwesomeIcon icon={faP} />}
-            {buttonText == "Contact" && <FontAwesomeIcon icon={faC} />}
+          <div
+            className="absolute top-1/2 w-full text-sm md:text-2xl text-center"
+            id="menuBarIcon"
+          >
+            {buttonText == "About" && (
+              <>
+                <FontAwesomeIcon className="hidden md:inline-block" icon={faA} />
+                <div className="md:invisible">{buttonText}</div>
+              </>
+            )}
+            {buttonText == "Career" && (
+              <>
+                <FontAwesomeIcon className="hidden md:inline-block" icon={faC} />
+                <div className="md:invisible">{buttonText}</div>
+              </>
+            )}
+            {buttonText == "Skill" && (
+              <>
+                <FontAwesomeIcon className="hidden md:inline-block" icon={faS} />
+                <div className="md:invisible">{buttonText}</div>
+              </>
+            )}
+            {buttonText == "Project" && (
+              <>
+                <FontAwesomeIcon className="hidden md:inline-block" icon={faP} />
+                <div className="md:invisible">{buttonText}</div>
+              </>
+            )}
+            {buttonText == "Contact" && (
+              <>
+                <FontAwesomeIcon className="hidden md:inline-block" icon={faC} />
+                <div className="md:invisible">{buttonText}</div>
+              </>
+            )}
           </div>
         </Link>
       )}

@@ -22,7 +22,7 @@ const MenuBarWhiteKeyBoardMenu = () => {
       <div className="flex justify-center items-end flex-grow relative w-full h-full border-x-2 border-soild border-mainColor hover:bg-gradient-to-b hover:from-mainColor hover:to-backgroundColor">
         <MenuBarMenuButton buttonText={"Contact"} />
       </div>
-      <div className="flex justify-center items-end flex-grow relative w-full h-full border-x-2 border-soild border-mainColor hover:bg-gradient-to-b hover:from-mainColor hover:to-backgroundColor"></div>
+      <div className="hidden md:flex justify-center items-end flex-grow relative w-full h-full border-x-2 border-soild border-mainColor hover:bg-gradient-to-b hover:from-mainColor hover:to-backgroundColor"></div>
     </>
   );
 };
