@@ -1,7 +1,9 @@
 import React from "react";
-import MainPage from "./pages/MainPage";
 import { Route, Routes, useLocation } from "react-router-dom";
+import MainPage from "./pages/MainPage";
 import AboutPage from "./pages/AboutPage";
+// import CareerPage from "./pages/CareerPage";
+import SkillsPage from "./pages/SkillsPage";
 import MainMenuBar from "./components/main/MainMenuBar";
 import MenuBar from "./components/common/MenuBar";
 
@@ -14,6 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/AboutPage" element={<AboutPage />} />
+        {/* <Route path="/CareerPage" element={<CareerPage />} /> */}
+        <Route path="/SkillsPage" element={<SkillsPage />} />
       </Routes>
       {location.pathname == "/" && <MainMenuBar />}
     </>

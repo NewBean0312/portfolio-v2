@@ -55,13 +55,13 @@ const MenuBarMenuButton = ({ buttonText }) => {
                 <div className="md:invisible">{buttonText}</div>
               </>
             )}
-            {buttonText == "Career" && (
+            {/* {buttonText == "Career" && (
               <>
                 <FontAwesomeIcon className="hidden md:inline-block" icon={faC} />
                 <div className="md:invisible">{buttonText}</div>
               </>
-            )}
-            {buttonText == "Skill" && (
+            )} */}
+            {buttonText == "Skills" && (
               <>
                 <FontAwesomeIcon className="hidden md:inline-block" icon={faS} />
                 <div className="md:invisible">{buttonText}</div>

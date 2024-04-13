@@ -15,19 +15,25 @@ const MainWhiteKeyBoardMenu = () => {
         className="flex-grow relative h-4/5 border-r-4 border-l-4 border-solid border-backgroundColor bg-mainColor hover:bg-gradient-to-b hover:from-backgroundColor hover:to-mainColor transition duration-500 ease-in-out"
         id="whiteKeyBoard"
       >
-        <MainMenuButton buttonText={"About"} />
+        <Animation />
       </div>
       <div
+        className="flex-grow relative h-4/5 border-r-4 border-l-4 border-solid border-backgroundColor bg-mainColor hover:bg-gradient-to-b hover:from-backgroundColor hover:to-mainColor transition duration-500 ease-in-out"
+        id="whiteKeyBoard"
+      >
+        <MainMenuButton buttonText={"About"} />
+      </div>
+      {/* <div
         className="flex-grow relative h-4/5 border-r-4 border-l-4 border-solid border-backgroundColor bg-mainColor hover:bg-gradient-to-b hover:from-backgroundColor hover:to-mainColor transition duration-500 ease-in-out"
         id="whiteKeyBoard"
       >
         <MainMenuButton buttonText={"Career"} />
-      </div>
+      </div> */}
       <div
         className="flex-grow relative h-4/5 border-r-4 border-l-4 border-solid border-backgroundColor bg-mainColor hover:bg-gradient-to-b hover:from-backgroundColor hover:to-mainColor transition duration-500 ease-in-out"
         id="whiteKeyBoard"
       >
-        <MainMenuButton buttonText={"Skill"} />
+        <MainMenuButton buttonText={"Skills"} />
       </div>
       <div
         className="flex-grow relative h-4/5 border-r-4 border-l-4 border-solid border-backgroundColor bg-mainColor hover:bg-gradient-to-b hover:from-backgroundColor hover:to-mainColor transition duration-500 ease-in-out"
