@@ -1,6 +1,7 @@
 import React from "react";
 import SubHeader from "../components/common/SubHeader";
 import SkillsSection from "../components/Skills/SkillsSection";
+import LogoModal from "../components/Skills/LogoModal";
 
 const SkillsPage = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import SnowBox from "../components/main/SnowBox";
 import SubHeader from "../components/common/SubHeader";
+import SnowBox from "../components/common/SnowBox";
 import AboutSection from "../components/about/AboutSection";
 
 const AboutPage = () => {
