@@ -34,7 +34,7 @@ const SkillsSection = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage imageSrc={HTMLLogo} imageAlt={"HTMLLogo"} />
+            <LogoImage imageSrc={HTMLLogo} imageAlt={"HTMLLogo"} logoId = {1} />
             <LogoImage imageSrc={CSSLogo} imageAlt={"CSSLogo"} />
             <LogoImage imageSrc={JavaScriptLogo} imageAlt={"JavaScriptLogo"} />
           </div>

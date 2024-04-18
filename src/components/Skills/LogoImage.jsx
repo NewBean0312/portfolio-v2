@@ -8,7 +8,7 @@ function random(min, max) {
   return parseFloat((Math.random() * (max - min) + min).toFixed(2));
 }
 
-const LogoImage = ({ imageSrc, imageAlt }) => {
+const LogoImage = ({ imageSrc, imageAlt, logoId }) => {
   const circleRef = useRef(null);
 
   // 로고 애니메이션 이벤트
@@ -45,7 +45,13 @@ const LogoImage = ({ imageSrc, imageAlt }) => {
       >
         <img src={imageSrc} alt={imageAlt} />
       </button>
-      <LogoModal isOpen={idModalOpen} onClose={closeModal} />
+      <LogoModal
+        isOpen={idModalOpen}
+        onClose={closeModal}
+        imageSrc={imageSrc}
+        imageAlt={imageAlt}
+        logoId={logoId}
+      />
     </>
   );
 };
