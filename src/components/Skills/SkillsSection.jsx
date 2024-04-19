@@ -35,8 +35,8 @@ const SkillsSection = () => {
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
             <LogoImage imageSrc={HTMLLogo} imageAlt={"HTMLLogo"} logoId = {1} />
-            <LogoImage imageSrc={CSSLogo} imageAlt={"CSSLogo"} />
-            <LogoImage imageSrc={JavaScriptLogo} imageAlt={"JavaScriptLogo"} />
+            <LogoImage imageSrc={CSSLogo} imageAlt={"CSSLogo"} logoId = {2} />
+            <LogoImage imageSrc={JavaScriptLogo} imageAlt={"JavaScriptLogo"} logoId = {3} />
           </div>
           <div className="flex-grow relative border-b-2 border-solid border-mainColor">
             <MobileNoteBoxTitle titleText={"Front-End"} />
@@ -47,8 +47,8 @@ const SkillsSection = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage imageSrc={ReactLogo} imageAlt={"ReactLogo"} />
-            <LogoImage imageSrc={SassLogo} imageAlt={"SassLogo"} />
+            <LogoImage imageSrc={ReactLogo} imageAlt={"ReactLogo"} logoId = {4} />
+            <LogoImage imageSrc={SassLogo} imageAlt={"SassLogo"} logoId = {5} />
           </div>
           <EmptyBox />
           <EmptyBox />
@@ -73,7 +73,7 @@ const SkillsSection = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage imageSrc={LinuxLogo} imageAlt={"LinuxLogo"} />
+            <LogoImage imageSrc={LinuxLogo} imageAlt={"LinuxLogo"} logoId = {6} />
           </div>
           <div className="flex-grow relative border-b-2 border-solid border-mainColor">
             <MobileNoteBoxTitle titleText={"Back-End"} />
@@ -84,7 +84,7 @@ const SkillsSection = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage imageSrc={MySQLLogo} imageAlt={"MySQLLogo"} />
+            <LogoImage imageSrc={MySQLLogo} imageAlt={"MySQLLogo"} logoId = {7} />
           </div>
           <EmptyBox />
           <EmptyBox />
@@ -109,8 +109,8 @@ const SkillsSection = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage imageSrc={GitLogo} imageAlt={"GitLogo"} />
-            <LogoImage imageSrc={GitHubLogo} imageAlt={"GitHubLogo"} />
+            <LogoImage imageSrc={GitLogo} imageAlt={"GitLogo"} logoId = {8} />
+            <LogoImage imageSrc={GitHubLogo} imageAlt={"GitHubLogo"} logoId = {9} />
           </div>
           <div className="flex-grow relative border-b-2 border-solid border-mainColor">
             <MobileNoteBoxTitle titleText={"Etc."} />
@@ -121,7 +121,7 @@ const SkillsSection = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage imageSrc={SourceTreeLogo} imageAlt={"SourceTreeLogo"} />
+            <LogoImage imageSrc={SourceTreeLogo} imageAlt={"SourceTreeLogo"} logoId = {10} />
           </div>
           <EmptyBox />
           <EmptyBox />
