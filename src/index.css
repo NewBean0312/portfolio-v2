@@ -341,3 +341,29 @@ html {
 #menuBar:hover #menuBarIcon {
   visibility: hidden;
 }
+
+/* slide-banner */
+#slideBanner {
+  transform: translateX(33.333333%);
+}
+
+#slide {
+  opacity: 0.05;
+}
+
+#slideActive {
+  opacity: 1;
+}
+
+#lpBoard {
+  opacity: 0;
+}
+
+#lpBoardActive {
+  opacity: 1;
+  transition: transform 0.5s;
+}
+
+#slideActive:hover #lpBoardActive {
+  transform: translateX(-45%);
+}

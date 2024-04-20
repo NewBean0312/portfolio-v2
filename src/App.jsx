@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage";
 import SkillsPage from "./pages/SkillsPage";
 import MainMenuBar from "./components/main/MainMenuBar";
 import MenuBar from "./components/common/MenuBar";
+import ProjectPage from "./pages/ProjectPage";
 
 function App() {
   const location = useLocation();
@@ -18,6 +19,7 @@ function App() {
         <Route path="/AboutPage" element={<AboutPage />} />
         {/* <Route path="/CareerPage" element={<CareerPage />} /> */}
         <Route path="/SkillsPage" element={<SkillsPage />} />
+        <Route path="/ProjectPage" element={<ProjectPage />} />
       </Routes>
       {location.pathname == "/" && <MainMenuBar />}
     </>
