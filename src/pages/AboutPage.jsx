@@ -5,11 +5,11 @@ import AboutSection from "../components/about/AboutSection";
 
 const AboutPage = () => {
   return (
-    <>
+    <main id="container">
       <SnowBox />
       <SubHeader headerText={"About me"} />
       <AboutSection />
-    </>
+    </main>
   )
 };
 

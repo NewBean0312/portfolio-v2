@@ -32,6 +32,12 @@ html {
   font-family: "Libre Baskerville", serif;
 }
 
+/* container */
+#container {
+  width: 100%;
+  height: 900px;
+}
+
 /* snowFlake CSS */
 @-webkit-keyframes snowflakes-fall {
   0% {
@@ -341,6 +347,7 @@ html {
 #menuBar:hover #menuBarIcon {
   visibility: hidden;
 }
+/* // buttonNav transition */
 
 /* slide-banner */
 #slideBanner {
@@ -348,7 +355,7 @@ html {
 }
 
 #slide {
-  opacity: 0.05;
+  opacity: 0;
 }
 
 #slideActive {
@@ -356,14 +363,10 @@ html {
 }
 
 #lpBoard {
-  opacity: 0;
+  transition: transform 0.5s ease-in-out;
 }
 
-#lpBoardActive {
-  opacity: 1;
-  transition: transform 0.5s;
-}
-
-#slideActive:hover #lpBoardActive {
+#slideActive:hover #lpBoard {
   transform: translateX(-45%);
 }
+/* // slide-banner */

@@ -5,13 +5,11 @@ import SnowBox from "../components/common/SnowBox";
 
 const MainPage = () => {
   return (
-    <>
-      <Header />
       <main>
+        <Header />
         <Typing />
         <SnowBox />
       </main>
-    </>
   );
 };
 

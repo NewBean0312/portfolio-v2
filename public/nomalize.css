@@ -20,6 +20,7 @@
      */
   
   body {
+
     margin: 0;
     background-color: #f3f4e9;
     box-sizing: border-box;
@@ -38,6 +39,7 @@
   
   main {
     display: block;
+    min-height: 500px;
   }
   
   /**
