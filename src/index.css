@@ -360,6 +360,7 @@ html {
 
 #slideActive {
   opacity: 1;
+  cursor: pointer;
 }
 
 #lpBoard {
@@ -367,6 +368,6 @@ html {
 }
 
 #slideActive:hover #lpBoard {
-  transform: translateX(-45%);
+  transform: translateX(-40%);
 }
 /* // slide-banner */

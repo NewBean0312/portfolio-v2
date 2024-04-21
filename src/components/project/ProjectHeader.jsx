@@ -8,7 +8,7 @@ const ProjectHeader = () => {
       <p className="font-DNFForgedBladeNormal text-xl text-mainColor text-center">
         레코드 판 클릭으로 자세히 보기!
         <br />
-        마우스 드래그로 넘기기~
+        버튼으로 넘기기~
       </p>
     </header>
   );
