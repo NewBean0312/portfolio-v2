@@ -1,17 +1,6 @@
 import React from "react";
 import NoteBoxTitle from "./NoteBoxTitle";
 import LogoImage from "./LogoImage";
-// 이미지 불러오기
-import HTMLLogo from "../../assets/images/skills-img/html-logo.png";
-import CSSLogo from "../../assets/images/skills-img/css-logo.png";
-import JavaScriptLogo from "../../assets/images/skills-img/javascript-logo.png";
-import ReactLogo from "../../assets/images/skills-img/react-logo.png";
-import SassLogo from "../../assets/images/skills-img/sass-logo.png";
-import LinuxLogo from "../../assets/images/skills-img/linux-logo.png";
-import MySQLLogo from "../../assets/images/skills-img/mysql-logo.png";
-import GitLogo from "../../assets/images/skills-img/git-logo.png";
-import GitHubLogo from "../../assets/images/skills-img/github-logo.png";
-import SourceTreeLogo from "../../assets/images/skills-img/sourcetree-logo.png";
 import MobileNoteBoxTitle from "./MobileNoteBoxTitle";
 
 const SkillsSection = () => {
@@ -34,9 +23,9 @@ const SkillsSection = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage imageSrc={HTMLLogo} imageAlt={"HTMLLogo"} logoId = {1} />
-            <LogoImage imageSrc={CSSLogo} imageAlt={"CSSLogo"} logoId = {2} />
-            <LogoImage imageSrc={JavaScriptLogo} imageAlt={"JavaScriptLogo"} logoId = {3} />
+            <LogoImage imageSrc={`${process.env.PUBLIC_URL}/images/skills-img/html-logo.png`} imageAlt={"HTMLLogo"} logoId = {1} />
+            <LogoImage imageSrc={`${process.env.PUBLIC_URL}/images/skills-img/css-logo.png`} imageAlt={"CSSLogo"} logoId = {2} />
+            <LogoImage imageSrc={`${process.env.PUBLIC_URL}/images/skills-img/javascript-logo.png`} imageAlt={"JavaScriptLogo"} logoId = {3} />
           </div>
           <div className="flex-grow relative border-b-2 border-solid border-mainColor">
             <MobileNoteBoxTitle titleText={"Front-End"} />
@@ -47,8 +36,8 @@ const SkillsSection = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage imageSrc={ReactLogo} imageAlt={"ReactLogo"} logoId = {4} />
-            <LogoImage imageSrc={SassLogo} imageAlt={"SassLogo"} logoId = {5} />
+            <LogoImage imageSrc={`${process.env.PUBLIC_URL}/images/skills-img/react-logo.png`} imageAlt={"ReactLogo"} logoId = {4} />
+            <LogoImage imageSrc={`${process.env.PUBLIC_URL}/images/skills-img/sass-logo.png`} imageAlt={"SassLogo"} logoId = {5} />
           </div>
           <EmptyBox />
           <EmptyBox />
@@ -73,7 +62,7 @@ const SkillsSection = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage imageSrc={LinuxLogo} imageAlt={"LinuxLogo"} logoId = {6} />
+            <LogoImage imageSrc={`${process.env.PUBLIC_URL}/images/skills-img/linux-logo.png`} imageAlt={"LinuxLogo"} logoId = {6} />
           </div>
           <div className="flex-grow relative border-b-2 border-solid border-mainColor">
             <MobileNoteBoxTitle titleText={"Back-End"} />
@@ -84,7 +73,7 @@ const SkillsSection = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage imageSrc={MySQLLogo} imageAlt={"MySQLLogo"} logoId = {7} />
+            <LogoImage imageSrc={`${process.env.PUBLIC_URL}/images/skills-img/mysql-logo.png`} imageAlt={"MySQLLogo"} logoId = {7} />
           </div>
           <EmptyBox />
           <EmptyBox />
@@ -109,8 +98,8 @@ const SkillsSection = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage imageSrc={GitLogo} imageAlt={"GitLogo"} logoId = {8} />
-            <LogoImage imageSrc={GitHubLogo} imageAlt={"GitHubLogo"} logoId = {9} />
+            <LogoImage imageSrc={`${process.env.PUBLIC_URL}/images/skills-img/git-logo.png`} imageAlt={"GitLogo"} logoId = {8} />
+            <LogoImage imageSrc={`${process.env.PUBLIC_URL}/images/skills-img/github-logo.png`} imageAlt={"GitHubLogo"} logoId = {9} />
           </div>
           <div className="flex-grow relative border-b-2 border-solid border-mainColor">
             <MobileNoteBoxTitle titleText={"Etc."} />
@@ -121,7 +110,7 @@ const SkillsSection = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage imageSrc={SourceTreeLogo} imageAlt={"SourceTreeLogo"} logoId = {10} />
+            <LogoImage imageSrc={`${process.env.PUBLIC_URL}/images/skills-img/sourcetree-logo.png`} imageAlt={"SourceTreeLogo"} logoId = {10} />
           </div>
           <EmptyBox />
           <EmptyBox />
