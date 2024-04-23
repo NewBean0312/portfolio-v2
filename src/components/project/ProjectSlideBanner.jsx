@@ -3,17 +3,17 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProjectModal from "./ProjectModal";
 
-const ProjectSlideBenner = ({ projectUrl }) => {
+const ProjectSlideBanner = ({ projectUrl }) => {
   // 슬라이드 배너 변수 지정
   const [currentIndex, setCurrentIndex] = useState(0);
-  const nextSlideBtn = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === projectUrl.length - 1 ? 0 : prevIndex + 1
-    );
-  };
   const prevSlideBtn = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? projectUrl.length - 1 : prevIndex - 1
+    );
+  };
+  const nextSlideBtn = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === projectUrl.length - 1 ? 0 : prevIndex + 1
     );
   };
 
@@ -41,9 +41,7 @@ const ProjectSlideBenner = ({ projectUrl }) => {
         {/* slide banner */}
         <div className="flex items-center w-full h-full" id="slideBanner">
           {projectUrl.map((project, index) => (
-            <>
               <div
-                className=""
                 id={index === currentIndex ? "slideActive" : "slide"}
                 key={index}
                 style={{
@@ -67,7 +65,6 @@ const ProjectSlideBenner = ({ projectUrl }) => {
                   onClick={() => openModal({index})}
                 />
               </div>
-            </>
           ))}
         </div>
         {/* next button */}
@@ -87,4 +84,4 @@ const ProjectSlideBenner = ({ projectUrl }) => {
   );
 };
 
-export default ProjectSlideBenner;
+export default ProjectSlideBanner;

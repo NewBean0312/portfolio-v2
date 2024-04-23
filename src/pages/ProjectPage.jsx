@@ -7,7 +7,7 @@ const ProjectPage = () => {
   const mainProjectUrl = [
     {
       lpBoardUrl: `${process.env.PUBLIC_URL}/images/project-img/lp-record/naeiltour-lp.png`,
-      lpBoxUrl: `${process.env.PUBLIC_URL}/images/project-img/website-img/naeiltour-renewal-img.png`,
+      lpBoxUrl: `${process.env.PUBLIC_URL}/images/project-img/website-img/naeiltour-renewal-img-0.png`,
     },
     {
       lpBoardUrl: `${process.env.PUBLIC_URL}/images/project-img/lp-record/liverpool-lp.png`,

@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectSlideBenner from "./ProjectSlideBenner";
+import ProjectSlideBanner from "./ProjectSlideBanner";
 
 const ProjectArticle = ({headerText, projectUrl}) => {
   return (
@@ -10,7 +10,7 @@ const ProjectArticle = ({headerText, projectUrl}) => {
         </h3>
       </div>
       <div className="flex justify-center items-center w-full h-full pb-7">
-        <ProjectSlideBenner projectUrl={projectUrl}/>
+        <ProjectSlideBanner projectUrl={projectUrl}/>
       </div>
     </article>
   );
