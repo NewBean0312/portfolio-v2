@@ -28,7 +28,7 @@ const LogoImage = ({ imageSrc, imageAlt, logoId }) => {
   }, []);
 
   // 로고 모달 버튼 이벤트
-  const [idModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -46,7 +46,7 @@ const LogoImage = ({ imageSrc, imageAlt, logoId }) => {
         <img src={imageSrc} alt={imageAlt} />
       </button>
       <LogoModal
-        isOpen={idModalOpen}
+        isOpen={isModalOpen}
         onClose={closeModal}
         imageSrc={imageSrc}
         imageAlt={imageAlt}

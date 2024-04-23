@@ -1,9 +1,7 @@
 import React from "react";
 import ProjectSlideBenner from "./ProjectSlideBenner";
 
-const ProjectArticle = ({headerText, projectData}) => {
-  
-
+const ProjectArticle = ({headerText, projectUrl}) => {
   return (
     <article className="h-1/2 border-b-4 border-solid border-mainColor">
       <div>
@@ -12,7 +10,7 @@ const ProjectArticle = ({headerText, projectData}) => {
         </h3>
       </div>
       <div className="flex justify-center items-center w-full h-full pb-7">
-        <ProjectSlideBenner projectData={projectData}/>
+        <ProjectSlideBenner projectUrl={projectUrl}/>
       </div>
     </article>
   );
