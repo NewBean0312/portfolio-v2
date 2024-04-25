@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowLeft,
   faArrowRight,
+  faCheck,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import projectData from "../../json/projectData.json";
@@ -23,7 +24,13 @@ const ProjectModal = ({ isOpen, onClose, projectId }) => {
       prevIndex === repeatCount - 1 ? 0 : prevIndex + 1
     );
   };
-  console.log(currentIndex);
+
+  const webSiteLinkButton = () => {
+    window.open(
+      `https://newbean0312.github.io/${selectedProject[0].webSiteURL}/`,
+      "_blank"
+    );
+  };
 
   if (!isOpen) return null;
 
@@ -92,13 +99,55 @@ const ProjectModal = ({ isOpen, onClose, projectId }) => {
                 </h2>
               </div>
               <div className="relative w-full h-64 pr-20">
-                <p className="overflow-y-auto h-48 font-DNFForgedBladeNormal text-xl text-textColor leading-7">
+                <p className="overflow-y-auto h-48 font-DNFForgedBladeNormal text-lg text-textColor leading-7">
                   {selectedProject[0].content}
                 </p>
-                <button className="absolute bottom-0 w-44 h-12 rounded-xl bg-mainColor text-whiteColor"
-                id="moreButton">
+                <button
+                  className="absolute bottom-3 w-44 h-12 rounded-xl bg-mainColor text-whiteColor"
+                  id="moreButton"
+                  onClick={webSiteLinkButton}
+                >
                   More View
                 </button>
+              </div>
+              <div className="w-full mt-2 border-t-2 border-solid border-mainColor">
+                <ul className="w-full pt-5">
+                  <li className="flex py-4 px-7">
+                    <div className="w-1/4 font-DNFForgedBladeBold text-xl text-mainColor">
+                      <FontAwesomeIcon icon={faCheck} className="mr-2" />
+                      Function
+                    </div>
+                    <div className="w-3/4 font-DNFForgedBladeNormal text-lg text-textColor">
+                      {selectedProject[0].function}
+                    </div>
+                  </li>
+                  <li className="flex py-5 px-7">
+                    <div className="w-1/4 font-DNFForgedBladeBold text-xl text-mainColor">
+                      <FontAwesomeIcon icon={faCheck} className="mr-2" />
+                      GitHub
+                    </div>
+                    <div className="w-3/4 font-DNFForgedBladeNormal text-lg text-textColor">
+                      <a
+                        href={`https://github.com/NewBean0312/${selectedProject[0].gitHubURL}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline"
+                      >
+                        {selectedProject[0].gitHubURL}
+                      </a>
+                      <span className="ml-2 text-mainColor">(Click!)</span>
+                    </div>
+                  </li>
+                  <li className="flex py-5 px-7">
+                    <div className="w-1/4 font-DNFForgedBladeBold text-xl text-mainColor">
+                      <FontAwesomeIcon icon={faCheck} className="mr-2" />
+                      Skills
+                    </div>
+                    <div className="w-3/4 font-DNFForgedBladeNormal text-lg text-textColor">
+                      {selectedProject[0].skills}
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
