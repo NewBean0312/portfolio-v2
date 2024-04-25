@@ -374,3 +374,12 @@ html {
   cursor: pointer;
 }
 /* // slide-banner */
+
+/* moreButton transition */
+#moreButton {
+  transition: transform 0.2s;
+}
+
+#moreButton:hover {
+  transform: translateY(5px);
+}

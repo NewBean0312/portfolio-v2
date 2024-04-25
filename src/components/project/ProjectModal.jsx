@@ -70,7 +70,7 @@ const ProjectModal = ({ isOpen, onClose, projectId }) => {
                           alt={selectedProject[0].src}
                           className="w-full"
                           style={{
-                            padding: index >= 4 ? "0 100px" : "",
+                            padding: index >= 4 ? "0 200px" : "0 50px",
                           }}
                         />
                       </div>
@@ -85,7 +85,22 @@ const ProjectModal = ({ isOpen, onClose, projectId }) => {
                 </button>
               </div>
             </div>
-            <div className="w-1/2 h-full"></div>
+            <div className="w-1/2 h-full pl-10">
+              <div className="pb-10">
+                <h2 className="pt-16 font-DNFForgedBladeBold text-2xl text-mainColor">
+                  {selectedProject[0].name}
+                </h2>
+              </div>
+              <div className="relative w-full h-64 pr-20">
+                <p className="overflow-y-auto h-48 font-DNFForgedBladeNormal text-xl text-textColor leading-7">
+                  {selectedProject[0].content}
+                </p>
+                <button className="absolute bottom-0 w-44 h-12 rounded-xl bg-mainColor text-whiteColor"
+                id="moreButton">
+                  More View
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

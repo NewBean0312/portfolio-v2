@@ -11,7 +11,8 @@ module.exports = {
       textColor: "#122a70",
       focusColor: "#023df7",
       snowFlake: "#49635550",
-      dimmedLayer: "#00000070"
+      dimmedLayer: "#00000070",
+      whiteColor: "#fff",
     },
     fontFamily: {
       DNFForgedBladeLight: ["DNFForgedBladeLight"],
