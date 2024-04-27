@@ -370,6 +370,10 @@ html {
   transform: translateX(-40%);
 }
 
+#project {
+  pointer-events: none;
+}
+
 #projectActive {
   cursor: pointer;
 }

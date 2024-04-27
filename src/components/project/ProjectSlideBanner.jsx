@@ -3,7 +3,7 @@ import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProjectModal from "./ProjectModal";
 
-const ProjectSlideBanner = ({ projectUrl }) => {
+const ProjectSlideBanner = ({ projectUrl, projectElement }) => {
   // 슬라이드 배너 변수 지정
   const [currentIndex, setCurrentIndex] = useState(0);
   const prevSlideBtn = () => {
@@ -61,7 +61,7 @@ const ProjectSlideBanner = ({ projectUrl }) => {
                   src={project.lpBoxUrl}
                   alt={`lp-Box-${index}`}
                   className="w-full h-full p-4"
-                  id={index === currentIndex ? "projectActive" : ""}
+                  id={index === currentIndex ? "projectActive" : "project"}
                   onClick={() => openModal({index})}
                 />
               </div>
@@ -79,6 +79,7 @@ const ProjectSlideBanner = ({ projectUrl }) => {
         isOpen={isModalOpen}
         onClose={closeModal}
         projectId={modalIndex}
+        projectElement={projectElement}
       />
     </>
   );

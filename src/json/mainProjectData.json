@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "src": "naeiltour-renewal-img",
+    "imageNumber": 7,
+    "mobileNumber": 4,
+    "name": "내일투어 리뉴얼 웹사이트",
+    "content": "내일투어 사이트를 리뉴얼한 웹사이트입니다. 처음 시작한 2인 팀 프로젝트였으며, 이번 팀플을 통해 처음에 css 컨벤션이나 클래스명 등을 정해놓고 해야 수월함을 깨달았습니다. 이 프로젝트에서 swiper 배너를 처음 사용해보았으며, 원하는 디자인으로 커스텀해 볼수 있었습니다. 저는 여기서 메인 메뉴, 취향에 따른 여행 찾기 배너, footer 배너, 항공권 예매 페이지, 모바일 반응형 디자인 등을 담당하였습니다.",
+    "webSiteURL": "naeiltour-renewal-website",
+    "function": "원하는 취향 여행 찾기, 월간 여행지 슬라이드, 각 여행 종류에 따른 나라 메뉴, 항공권 예매, 고객센터",
+    "gitHubURL": "naeiltour-renewal-website-code",
+    "skills": "HTML, CSS, JavaScript, Swiper 배너"
+  },
+  {
+    "id": 1,
+    "src": "liverpool-img",
+    "imageNumber": 11,
+    "mobileNumber": 10,
+    "name": "리버풀 FC 웹사이트",
+    "content": "리버풀 FC를 좋아한 나머지 홈페이지까지 만들어보고 싶어서 제작하였습니다. html과 css로 제작하였으며, about, news, schduels, player 등등 여러 페이지를 제작하였습니다. 이 프로젝트는 개인 프로젝트입니다.",
+    "webSiteURL": "liverpool-website",
+    "function": "소개, 뉴스, 스케줄, 연혁, 문의, 선수단, 시즌권, 쇼핑 페이지",
+    "gitHubURL": "liverpool-website-code",
+    "skills": "HTML, CSS"
+  },
+  {
+    "id": 2,
+    "src": "PyeongChang2018-img",
+    "imageNumber": 4,
+    "mobileNumber": 3,
+    "name": "PyeongChang2018 리뉴얼 웹사이트",
+    "content": "평창2018 동계올림픽 사이트를 리뉴얼한 웹사이트입니다. 이 웹사이트는 모바일에서도 동작 가능한 반응형 디자인으로 제작되었으며, 예전에 평창 동계 올림픽을 재미있게 보았던 추억이 있어, 다른 사람들에게 다시 보여주고자 하는 마음으로 개발했습니다. 이 웹사이트는 반응형 디자인을 공부하기 위해 제작하였습니다. 이 프로젝트는 입니다.개인 프로젝트입니다.",
+    "webSiteURL": "PyeongChang2018-website",
+    "function": "올림픽 소개 및 종목 소개, 뉴스와 contact 섹션, 구글 지도 api 사용, 모바일 버전 반응형 디자인",
+    "gitHubURL": "PyeongChang2018-website-code",
+    "skills": "HTML, CSS, 구글맵 API"
+  }
+]

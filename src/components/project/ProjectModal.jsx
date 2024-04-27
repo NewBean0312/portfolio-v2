@@ -6,10 +6,16 @@ import {
   faCheck,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
-import projectData from "../../json/projectData.json";
+import mainProjectData from "../../json/mainProjectData.json";
+import subProjectData from "../../json/subProjectData.json";
 
-const ProjectModal = ({ isOpen, onClose, projectId }) => {
-  const selectedProject = projectData.filter((data) => data.id === projectId);
+const ProjectModal = ({ isOpen, onClose, projectId, projectElement }) => {
+  const selectedProject =
+    projectElement === "main"
+      ? mainProjectData.filter((data) => data.id === projectId)
+      : projectElement === "sub"
+      ? subProjectData.filter((data) => data.id === projectId)
+      : "";
   const repeatCount = selectedProject[0].imageNumber;
   // 슬라이드 배너 변수 지정
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -74,10 +80,13 @@ const ProjectModal = ({ isOpen, onClose, projectId }) => {
                       >
                         <img
                           src={`${process.env.PUBLIC_URL}/images/project-img/website-img/${selectedProject[0].src}-${index}.png`}
-                          alt={selectedProject[0].src}
+                          alt={`${selectedProject[0].src}-${index}`}
                           className="w-full"
                           style={{
-                            padding: index >= 4 ? "0 200px" : "0 50px",
+                            padding:
+                              index >= selectedProject[0].mobileNumber
+                                ? "0 200px"
+                                : "0 50px",
                           }}
                         />
                       </div>
