@@ -5,7 +5,7 @@ const ProjectArticle = ({headerText, projectUrl, projectElement}) => {
   return (
     <article className="h-1/2 border-b-4 border-solid border-mainColor">
       <div>
-        <h3 className="pt-5 font-DNFForgedBladeBold text-xl text-mainColor">
+        <h3 className="pl-5 lg:pl-0 pt-5 font-DNFForgedBladeBold text-xl text-mainColor">
           {headerText}
         </h3>
       </div>

@@ -379,6 +379,12 @@ html {
 }
 /* // slide-banner */
 
+@media screen and (max-width: 500px) {
+  #slideBanner {
+    width: 700px;
+  }
+}
+
 /* moreButton transition */
 #moreButton {
   transition: transform 0.2s;

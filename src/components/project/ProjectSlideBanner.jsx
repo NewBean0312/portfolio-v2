@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProjectModal from "./ProjectModal";
@@ -17,6 +17,18 @@ const ProjectSlideBanner = ({ projectUrl, projectElement }) => {
     );
   };
 
+  // 슬라이드 item 너비 측정
+  const mySlideElement = useRef(null);
+  const [elementWidth, setElementWidth] = useState(0);
+
+  useEffect(() => {
+    // 슬라이더 item의 요소가 변경될 때 실행될 콜백 함수
+    if (mySlideElement.current) {
+      const width = mySlideElement.current.clientWidth;
+      setElementWidth(width); // 상태 업데이트
+    }
+  }, []); // 슬라이더가 마운트될 때, 한 번 실행
+
   // 로고 모달 버튼 이벤트
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalIndex, setModalIndex] = useState(0); // map 함수의 index를 전달할 변수
@@ -33,7 +45,7 @@ const ProjectSlideBanner = ({ projectUrl, projectElement }) => {
       <div className="flex justify-center items-center overflow-hidden relative w-full h-80">
         {/* prev button */}
         <button
-          className="z-10 absolute left-28 w-10 h-10 rounded-full border-2 border-solid text-mainColor top-1/2 translate-y-[-50%]"
+          className="z-10 absolute left-3 md:left-28 w-10 h-10 rounded-full border-2 border-solid border-mainColor bg-backgroundColor text-mainColor top-1/2 translate-y-[-50%]"
           onClick={prevSlideBtn}
         >
           <FontAwesomeIcon icon={faArrowLeft} />
@@ -44,11 +56,12 @@ const ProjectSlideBanner = ({ projectUrl, projectElement }) => {
               <div
                 id={index === currentIndex ? "slideActive" : "slide"}
                 key={index}
+                ref={mySlideElement}
                 style={{
                   width: "300px",
                   height: "300px",
                   transition: "transform 0.5s, opacity 0.5s ease-in-out",
-                  transform: `translateX(-${currentIndex * 300}px)`,
+                  transform: `translateX(-${currentIndex * elementWidth}px)`,
                 }}
               >
                 <img
@@ -69,7 +82,7 @@ const ProjectSlideBanner = ({ projectUrl, projectElement }) => {
         </div>
         {/* next button */}
         <button
-          className="z-10 absolute right-28 w-10 h-10 rounded-full border-2 border-solid text-mainColor top-1/2 translate-y-[-50%]"
+          className="z-10 absolute right-3 md:right-28 w-10 h-10 rounded-full border-2 border-solid border-mainColor bg-backgroundColor text-mainColor top-1/2 translate-y-[-50%]"
           onClick={nextSlideBtn}
         >
           <FontAwesomeIcon icon={faArrowRight} />
