@@ -19,7 +19,7 @@ function BlackKeyBoard() {
 
 function MobileBlackKeyBoard() {
   // 검은 키보드 건반 위치 및 너비 설정
-  const leftPositions = ["12%", "29%", "46%", "63%", "80%"];
+  const leftPositions = ["15%", "35%", "55%", "75%"];
 
   return (
     <>

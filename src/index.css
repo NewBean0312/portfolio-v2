@@ -386,10 +386,10 @@ html {
 }
 
 /* moreButton transition */
-#moreButton {
+#button {
   transition: transform 0.2s;
 }
 
-#moreButton:hover {
+#button:hover {
   transform: translateY(5px);
 }
