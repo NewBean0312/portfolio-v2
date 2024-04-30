@@ -393,3 +393,9 @@ html {
 #button:hover {
   transform: translateY(5px);
 }
+
+/* #completeModal */
+#completeModal {
+  transition: transform 1s;
+}
+
