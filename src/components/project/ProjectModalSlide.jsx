@@ -37,7 +37,7 @@ const ProjectModalSlide = ({ selectedProject }) => {
     <div className=" flex overflow-hidden relative h-full">
       {/* prev button */}
       <button
-        className="z-10 absolute left-10 w-10 h-10 mt-48 lg:mt-60 rounded-full border-2 border-solid bg-backgroundColor text-mainColor top-1/2 translate-y-[-50%]"
+        className="z-10 absolute left-10 w-10 h-10 mt-40 lg:mt-60 rounded-full border-2 border-solid bg-backgroundColor text-mainColor top-1/2 translate-y-[-50%]"
         onClick={prevSlideBtn}
       >
         <FontAwesomeIcon icon={faArrowLeft} />
@@ -78,7 +78,7 @@ const ProjectModalSlide = ({ selectedProject }) => {
       </div>
       {/* next button */}
       <button
-        className="z-10 absolute right-10 w-10 h-10 mt-48 lg:mt-60 rounded-full border-2 border-solid bg-backgroundColor text-mainColor top-1/2 translate-y-[-50%]"
+        className="z-10 absolute right-10 w-10 h-10 mt-40 lg:mt-60 rounded-full border-2 border-solid bg-backgroundColor text-mainColor top-1/2 translate-y-[-50%]"
         onClick={nextSlideBtn}
       >
         <FontAwesomeIcon icon={faArrowRight} />

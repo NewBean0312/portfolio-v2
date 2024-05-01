@@ -63,7 +63,7 @@ const ProjectModal = ({ isOpen, onClose, projectId, projectElement }) => {
               <div className="w-full mt-2 border-t-2 border-solid border-mainColor">
                 <ul className="w-full pt-5">
                   <li className="flex py-4 pr-2 xl:px-7">
-                    <div className="w-1/3 xl:w-1/4 font-DNFForgedBladeBold text-lg xl:text-xl text-mainColor">
+                    <div className="w-1/3 xl:w-1/4 font-DNFForgedBladeBold md:text-lg xl:text-xl text-mainColor">
                       <FontAwesomeIcon icon={faCheck} className="mr-2" />
                       Function
                     </div>
@@ -72,7 +72,7 @@ const ProjectModal = ({ isOpen, onClose, projectId, projectElement }) => {
                     </div>
                   </li>
                   <li className="flex py-4 pr-2 xl:px-7">
-                    <div className="w-1/3 xl:w-1/4 font-DNFForgedBladeBold text-lg xl:text-xl text-mainColor">
+                    <div className="w-1/3 xl:w-1/4 font-DNFForgedBladeBold md:text-lg xl:text-xl text-mainColor">
                       <FontAwesomeIcon icon={faCheck} className="mr-2" />
                       GitHub
                     </div>
@@ -89,7 +89,7 @@ const ProjectModal = ({ isOpen, onClose, projectId, projectElement }) => {
                     </div>
                   </li>
                   <li className="flex py-4 pr-2 xl:px-7">
-                    <div className="w-1/3 xl:w-1/4 font-DNFForgedBladeBold text-lg xl:text-xl text-mainColor">
+                    <div className="w-1/3 xl:w-1/4 font-DNFForgedBladeBold md:text-lg xl:text-xl text-mainColor">
                       <FontAwesomeIcon icon={faCheck} className="mr-2" />
                       Skills
                     </div>

@@ -3,7 +3,7 @@ import SubHeader from "../common/SubHeader";
 
 const ContactHeader = () => {
   return (
-    <header className="w-1/3 text-center">
+    <header className="w-full lg:w-1/3 text-center">
       <SubHeader headerText={"Contact"} />
       <p className="font-DNFForgedBladeNormal text-xl text-mainColor">
         저에 대해 더 자세히 알고 싶다면?
