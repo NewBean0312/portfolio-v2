@@ -1,8 +1,8 @@
 import React from "react";
-import ProjectHeader from "../components/project/ProjectHeader";
-import ProjectArticle from "../components/project/ProjectArticle";
+import ProjectHeader from "./ProjectHeader";
+import ProjectArticle from "./ProjectArticle";
 
-const ProjectPage = () => {
+const ProjectSection = () => {
   // 프로젝트 이미지 URL
   const mainProjectUrl = [
     {
@@ -34,9 +34,9 @@ const ProjectPage = () => {
   ];
 
   return (
-    <main className="flex flex-col lg:flex-row items-center lg:items-start relative pt-20" id="container">
+    <section className="flex flex-col lg:flex-row items-center lg:items-start relative pt-20" id="container">
       <ProjectHeader />
-      <section className="relative w-full lg:w-2/3 xl:w-7/12">
+      <div className="relative w-full lg:w-2/3 xl:w-7/12">
         <ProjectArticle
           headerText={"Main Project"}
           projectUrl={mainProjectUrl}
@@ -47,9 +47,9 @@ const ProjectPage = () => {
           projectUrl={subProjectUrl}
           projectElement={"sub"}
         />
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 
-export default ProjectPage;
+export default ProjectSection;

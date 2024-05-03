@@ -1,22 +1,22 @@
 import React from "react";
-import MainPage from "./pages/MainPage";
-import AboutPage from "./pages/AboutPage";
-import SkillsPage from "./pages/SkillsPage";
-import ProjectPage from "./pages/ProjectPage";
-import ContactPage from "./pages/ContactPage";
+import MainSection from "./components/main/MainSection";
+import AboutSection from "./components/about/AboutSection";
+import SkillsSection from "./components/skills/SkillsSection";
+import ProjectSection from "./components/project/ProjectSection";
+import ContactSection from "./components/contact/ContactSection";
 import MenuBar from "./components/common/MenuBar";
 
 function App() {
 
   return (
-    <>
-      <MainPage />
-      <AboutPage />
-      <SkillsPage />
-      <ProjectPage />
-      <ContactPage />
+    <main className="w-full">
+      <MainSection />
+      <AboutSection />
+      <SkillsSection />
+      <ProjectSection />
+      <ContactSection />
       <MenuBar />
-    </>
+    </main>
   );
 }
 
