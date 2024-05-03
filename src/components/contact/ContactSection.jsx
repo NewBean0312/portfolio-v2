@@ -4,7 +4,7 @@ import ContactArticle from "./ContactArticle";
 
 const ContactSection = () => {
   return (
-    <section className="flex flex-col lg:flex-row justify-center items-center" id="container">
+    <section className="section-container flex flex-col lg:flex-row justify-center items-center" id="ContactSection">
       <ContactHeader />
       <ContactArticle />
     </section>

@@ -4,7 +4,7 @@ import AboutArticle from "./AboutArticle";
 
 const AboutPage = () => {
   return (
-    <section id="container">
+    <section className="section-container relative" id="AboutSection">
       <SubHeader headerText={"About me"} />
       <AboutArticle />
     </section>

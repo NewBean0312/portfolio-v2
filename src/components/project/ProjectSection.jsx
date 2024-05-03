@@ -34,7 +34,7 @@ const ProjectSection = () => {
   ];
 
   return (
-    <section className="flex flex-col lg:flex-row items-center lg:items-start relative pt-20" id="container">
+    <section className="section-container flex flex-col lg:flex-row items-center lg:items-start relative pt-20" id="ProjectSection">
       <ProjectHeader />
       <div className="relative w-full lg:w-2/3 xl:w-7/12">
         <ProjectArticle

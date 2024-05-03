@@ -34,7 +34,7 @@ const MenuBar = () => {
       const scrollPosition = window.scrollY;
       const viewportHeight = window.innerHeight;
       // 스크롤 위치가 뷰포트 height의 100%를 넘었을 때, isVisible 상태 변경
-      if (scrollPosition > viewportHeight) {
+      if (scrollPosition > viewportHeight - 1) {
         setIsVisible(true);
       } else {
         setIsVisible(false);

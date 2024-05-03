@@ -6,7 +6,7 @@ import MainMenuBar from "./MainMenuBar";
 
 const MainPage = () => {
   return (
-    <section id="container" className="relative">
+    <section className="section-container relative" id="MainSection">
       <Header />
       <Typing />
       <SnowBox />

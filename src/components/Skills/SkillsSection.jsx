@@ -4,7 +4,7 @@ import SkillsArticle from "./SkillsArticle";
 
 const SkillsSection = () => {
   return (
-      <section className="relative" id="container">
+      <section className="section-container relative" id="SkillsSection">
         <header className="w-2/5 h-auto my-0 mx-auto border-b-4 border-solid border-mainColor text-center">
           <SubHeader headerText={"Skills"} />
           <div className="pr-3 pt-2 border-t-2 border-solid border-mainColor text-mainColor font-DNFForgedBladeNormal text-right">
