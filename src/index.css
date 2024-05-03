@@ -28,6 +28,10 @@
 }
 
 /* custom */
+:root {
+  --container-height: 100vh;
+}
+
 html {
   font-family: "Libre Baskerville", serif;
 }
@@ -35,7 +39,7 @@ html {
 /* container */
 #container {
   width: 100%;
-  height: 900px;
+  height: var(--container-height);
 }
 
 /* snowFlake CSS */

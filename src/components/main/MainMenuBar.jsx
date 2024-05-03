@@ -27,7 +27,7 @@ function MainBoxGroupMenu() {
 
 const MainMenuBar = () => {
   return (
-    <div className="flex absolute bottom-0 w-full h-72 select-none">
+    <div className="flex z-50 absolute bottom-0 w-full h-72 select-none">
       <MainBoxGroup />
       <MainBoxGroup />
       <MainBoxGroup />

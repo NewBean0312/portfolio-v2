@@ -69,7 +69,7 @@ const AboutSection = () => {
               imageSize={image.size}
               topPosition={image.top}
               leftPosition={image.left}
-              isHoverd={isHoverd}
+              isHoverd={isHoverd} // span에서 불러온 number 넘기기
             />
           ))}
         </article>
@@ -80,6 +80,7 @@ const AboutSection = () => {
           <p className="w-11/12 lg:w-auto mt-7 ml-auto lg:ml-5 mr-auto lg:mr-0 font-DNFForgedBladeNormal text-base md:text-xl text-textColor text-center lg:text-left">
             안녕하세요!&nbsp;
             <span
+              // 개별 이미지 불러오기
               onMouseEnter={() => handleMouseEnter(0)}
               onMouseLeave={handleMouseLeave}
               className="mr-1 font-DNFForgedBladeBold italic text-mainColor underline"

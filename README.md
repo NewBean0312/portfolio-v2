@@ -70,3 +70,24 @@
   - [gitHub](https://github.com/NewBean0312/portfolio-v2/commit/4399bd6)
 
 - 7. About 페이지 이미지 박스
+
+  - About 페이지에서 키워드에 마우스를 갖다대면, 이미지 박스가 나오는 이벤트를 작업하였습니다.
+  - AboutSection.jsx에서 map 함수로 여러 이미지를 불러온 후, 하위 컴포넌트인 AboutImage에서 불러온 isHoverd의 number로 개별 이미지를 불러옵니다.
+  - 개발 날짜 : 2024.04.11
+  - [gitHub](https://github.com/NewBean0312/portfolio-v2/commit/5056304)
+
+- 8. Skills 페이지 logo 애니메이션
+
+  - Skills 페이지에서 각 logo 마다 상하로 움직이는 애니메이션을 주고자 하였습니다.
+  - random 함수로 min과 max 범위 사이의 값을 소수점 2자리로 반환한 문자열에 parseFloat 함수를 사용하여 다시 소수점 숫자로 변환합니다.
+  - 변환된 값을 logo에 넣어 각자 다양한 시간대로 움직이는 로고 이미지를 작업하였습니다.
+  - 개발 날짜 : 2024.04.17
+  - [gitHub](https://github.com/NewBean0312/portfolio-v2/commit/53955e4e)
+
+- 9. Skills 페이지 모달 창 및 json 적용
+
+  - Skills 페이지에서 Modal 창을 이용하여 어떤 스킬을 구사 가능한 지 알리고자 하였습니다.
+  - modal 창에 들어갈 데이터는 json 파일을 불러와서 적용하였습니다.
+  - LogoImage 컴포넌트에 logoId를 부여하여, modal 창이 개별로 열릴 수 있도록 작업하였습니다.
+  - 개발 날짜 : 2024.04.17
+  - [gitHub](https://github.com/NewBean0312/portfolio-v2/commit/53955e4e)

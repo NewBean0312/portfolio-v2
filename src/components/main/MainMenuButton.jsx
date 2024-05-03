@@ -14,7 +14,7 @@ const MainMenuButton = ({ buttonText }) => {
         >
           {buttonText}
         </div>
-        <div className="fixed bottom-2 h-28 text-sm text-mainButtonTextColor text-center tracking-wide uppercase">
+        <div className="absolute bottom-2 h-28 text-sm text-mainButtonTextColor text-center tracking-wide uppercase">
           {buttonText.split("").map((char, index) => (
             <React.Fragment key={index}>
               <div className="h-4">{char}</div>
