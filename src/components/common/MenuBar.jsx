@@ -54,7 +54,7 @@ const MenuBar = () => {
     <>
       {isVisible && (
         <nav
-          className="flex fixed top-0 overflow-hidden z-50 w-full h-20 hover:h-52 border-b-4 border-solid border-mainColor bg-backgroundColor"
+          className="flex fixed top-0 overflow-hidden z-30 w-full h-20 lg:hover:h-52 border-b-4 border-solid border-mainColor bg-backgroundColor"
           id="menuBar"
         >
           <MenuBarBoxGroup />

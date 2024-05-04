@@ -19,24 +19,24 @@ const MenuBarMenuButton = ({ buttonText }) => {
       >
         {buttonText.split("").map((char, index) => (
           <React.Fragment key={index}>
-            <div className="h-4">{char}</div>
+            <div className="invisible lg:visible h-4">{char}</div>
           </React.Fragment>
         ))}
       </div>
       <div
-        className="absolute top-1/2 w-full text-sm md:text-2xl text-center"
+        className="absolute top-1/2 w-full text-sm lg:text-2xl text-center"
         id="menuBarIcon"
       >
         {buttonText == "Main" && (
           <>
-            <FontAwesomeIcon className="hidden md:inline-block" icon={faM} />
-            <div className="md:invisible">{buttonText}</div>
+            <FontAwesomeIcon className="hidden lg:inline-block" icon={faM} />
+            <div className="lg:invisible">{buttonText}</div>
           </>
         )}
         {buttonText == "About" && (
           <>
-            <FontAwesomeIcon className="hidden md:inline-block" icon={faA} />
-            <div className="md:invisible">{buttonText}</div>
+            <FontAwesomeIcon className="hidden lg:inline-block" icon={faA} />
+            <div className="lg:invisible">{buttonText}</div>
           </>
         )}
         {/* {buttonText == "Career" && (
@@ -47,20 +47,20 @@ const MenuBarMenuButton = ({ buttonText }) => {
             )} */}
         {buttonText == "Skills" && (
           <>
-            <FontAwesomeIcon className="hidden md:inline-block" icon={faS} />
-            <div className="md:invisible">{buttonText}</div>
+            <FontAwesomeIcon className="hidden lg:inline-block" icon={faS} />
+            <div className="lg:invisible">{buttonText}</div>
           </>
         )}
         {buttonText == "Project" && (
           <>
-            <FontAwesomeIcon className="hidden md:inline-block" icon={faP} />
-            <div className="md:invisible">{buttonText}</div>
+            <FontAwesomeIcon className="hidden lg:inline-block" icon={faP} />
+            <div className="lg:invisible">{buttonText}</div>
           </>
         )}
         {buttonText == "Contact" && (
           <>
-            <FontAwesomeIcon className="hidden md:inline-block" icon={faC} />
-            <div className="md:invisible">{buttonText}</div>
+            <FontAwesomeIcon className="hidden lg:inline-block" icon={faC} />
+            <div className="lg:invisible">{buttonText}</div>
           </>
         )}
       </div>

@@ -32,12 +32,14 @@ const ProjectSlideBanner = ({ projectUrl, projectElement }) => {
   // 로고 모달 버튼 이벤트
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalIndex, setModalIndex] = useState(0); // map 함수의 index를 전달할 변수
-  const openModal = ({index}) => {
+  const openModal = ({ index }) => {
     setIsModalOpen(true);
     setModalIndex(index);
+    document.body.style.overflow = 'hidden' // modal open 시, body의 overflow = hidden
   };
   const closeModal = () => {
     setIsModalOpen(false);
+    document.body.style.overflow = 'visible' // modal close 시, body의 overflow = visible
   };
 
   return (
@@ -53,31 +55,31 @@ const ProjectSlideBanner = ({ projectUrl, projectElement }) => {
         {/* slide banner */}
         <div className="flex items-center w-full h-full" id="slideBanner">
           {projectUrl.map((project, index) => (
-              <div
-                id={index === currentIndex ? "slideActive" : "slide"}
-                key={index}
-                ref={mySlideElement}
-                style={{
-                  width: "300px",
-                  height: "300px",
-                  transition: "transform 0.5s, opacity 0.5s ease-in-out",
-                  transform: `translateX(-${currentIndex * elementWidth}px)`,
-                }}
-              >
-                <img
-                  src={project.lpBoardUrl}
-                  alt={`lp-board-${index}`}
-                  className="-z-10 absolute w-full h-full translate-x-[-80px]"
-                  id="lpBoard"
-                />
-                <img
-                  src={project.lpBoxUrl}
-                  alt={`lp-Box-${index}`}
-                  className="w-full h-full p-4"
-                  id={index === currentIndex ? "projectActive" : "project"}
-                  onClick={() => openModal({index})}
-                />
-              </div>
+            <div
+              id={index === currentIndex ? "slideActive" : "slide"}
+              key={index}
+              ref={mySlideElement}
+              style={{
+                width: "300px",
+                height: "300px",
+                transition: "transform 0.5s, opacity 0.5s ease-in-out",
+                transform: `translateX(-${currentIndex * elementWidth}px)`,
+              }}
+            >
+              <img
+                src={project.lpBoardUrl}
+                alt={`lp-board-${index}`}
+                className="-z-10 absolute w-full h-full translate-x-[-80px]"
+                id="lpBoard"
+              />
+              <img
+                src={project.lpBoxUrl}
+                alt={`lp-Box-${index}`}
+                className="w-full h-full p-4"
+                id={index === currentIndex ? "projectActive" : "project"}
+                onClick={() => openModal({ index })}
+              />
+            </div>
           ))}
         </div>
         {/* next button */}

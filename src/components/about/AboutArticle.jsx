@@ -82,7 +82,7 @@ const AboutArticle = () => {
             // 개별 이미지 불러오기
             onMouseEnter={() => handleMouseEnter(0)}
             onMouseLeave={handleMouseLeave}
-            className="mr-1 font-DNFForgedBladeBold italic text-mainColor underline"
+            className="mr-1 font-DNFForgedBladeBold italic text-mainColor underline hover:text-focusColor"
           >
             여행하는 듯한 홈페이지
           </span>
@@ -90,7 +90,7 @@ const AboutArticle = () => {
           <span
             onMouseEnter={() => handleMouseEnter(1)}
             onMouseLeave={handleMouseLeave}
-            className="mr-1 font-DNFForgedBladeBold italic text-mainColor underline"
+            className="mr-1 font-DNFForgedBladeBold italic text-mainColor underline hover:text-focusColor"
           >
             전유빈
           </span>
@@ -103,7 +103,7 @@ const AboutArticle = () => {
           <span
             onMouseEnter={() => handleMouseEnter(2)}
             onMouseLeave={handleMouseLeave}
-            className="mr-1 font-DNFForgedBladeBold italic text-mainColor underline"
+            className="mr-1 font-DNFForgedBladeBold italic text-mainColor underline hover:text-focusColor"
           >
             편히 이용하고 다시 찾아줄 수 있는 홈페이지
           </span>

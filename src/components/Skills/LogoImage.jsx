@@ -34,9 +34,11 @@ const LogoImage = ({ imageSrc, imageAlt, logoId }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const openModal = () => {
     setIsModalOpen(true);
+    document.body.style.overflow = 'hidden'; // modal open 시, body의 overflow = hidden
   };
   const closeModal = () => {
     setIsModalOpen(false);
+    document.body.style.overflow = 'visible'; // modal close 시, body의 overflow = visible
   };
 
   return (

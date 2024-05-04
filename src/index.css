@@ -42,6 +42,12 @@ html {
   height: var(--container-height);
 }
 
+@media screen and (max-width: 768px) {
+  .section-container:not(#MainSection) {
+    height: auto;
+  }
+}
+
 /* snowFlake CSS */
 @-webkit-keyframes snowflakes-fall {
   0% {
@@ -224,13 +230,8 @@ html {
   border-right: none;
 }
 
-@media screen and (max-width: 500px) {
-  #boxGroup:nth-child(1) {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 768px) {
+  #boxGroup:nth-child(1),
   #boxGroup:nth-child(2) {
     display: none;
   }
@@ -320,7 +321,7 @@ html {
 /* // 메인 메뉴 건반 animation */
 
 /* boxGroupMenu media css */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   #boxGroupMenu #whiteKeyBoard:first-child {
     border-left: none;
   }
@@ -350,6 +351,12 @@ html {
 
 #menuBar:hover #menuBarIcon {
   visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  #menuBar:hover #menuBarIcon {
+    visibility: visible;
+  }
 }
 /* // buttonNav transition */
 
@@ -402,4 +409,3 @@ html {
 #completeModal {
   transition: transform 1s;
 }
-

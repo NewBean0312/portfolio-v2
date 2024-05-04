@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectSlideBanner from "./ProjectSlideBanner";
 
-const ProjectArticle = ({headerText, projectUrl, projectElement}) => {
+const ProjectArticle = ({ headerText, projectUrl, projectElement }) => {
   return (
     <article className="h-1/2 border-b-4 border-solid border-mainColor">
       <div>
@@ -10,7 +10,10 @@ const ProjectArticle = ({headerText, projectUrl, projectElement}) => {
         </h3>
       </div>
       <div className="flex justify-center items-center w-full h-full pb-7">
-        <ProjectSlideBanner projectUrl={projectUrl} projectElement={projectElement}/>
+        <ProjectSlideBanner
+          projectUrl={projectUrl}
+          projectElement={projectElement}
+        />
       </div>
     </article>
   );
