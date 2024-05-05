@@ -21,7 +21,7 @@ const ProjectSection = () => {
   const subProjectUrl = [
     {
       lpBoardUrl: `${process.env.PUBLIC_URL}/images/project-img/lp-record/todolist-lp.png`,
-      lpBoxUrl: `${process.env.PUBLIC_URL}/images/project-img/website-img/todoist-img-0.png`,
+      lpBoxUrl: `${process.env.PUBLIC_URL}/images/project-img/website-img/todolist-img-0.png`,
     },
     {
       lpBoardUrl: `${process.env.PUBLIC_URL}/images/project-img/lp-record/pokedex-lp.png`,
