@@ -340,13 +340,14 @@ html {
 
 /* buttonNav transition */
 #buttonNav {
-  transition: opacity 1.5s;
+  transition: opacity 0.5s ease-in;
 }
 
 #menuBar:hover #buttonNav {
   visibility: visible;
   opacity: 1;
   top: 40%;
+  color: #416d83;
 }
 
 #menuBar:hover #menuBarIcon {

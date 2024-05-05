@@ -11,10 +11,10 @@ const MenuBarMenuButton = ({ buttonText }) => {
       spy={true}
       smooth={true}
       duration={500}
-      className="flex justify-center w-full h-full text-mainColor cursor-pointer"
+      className="flex justify-center w-full h-full cursor-pointer"
     >
       <div
-        className="invisible opacity-0 absolute text-center text-md font-bold"
+        className="invisible opacity-0 absolute text-md font-bold text-backgroundColor text-center"
         id="buttonNav"
       >
         {buttonText.split("").map((char, index) => (
@@ -24,7 +24,7 @@ const MenuBarMenuButton = ({ buttonText }) => {
         ))}
       </div>
       <div
-        className="absolute top-1/2 w-full text-sm lg:text-2xl text-center"
+        className="absolute top-1/2 w-full text-sm lg:text-2xl text-mainColor text-center"
         id="menuBarIcon"
       >
         {buttonText == "Main" && (
