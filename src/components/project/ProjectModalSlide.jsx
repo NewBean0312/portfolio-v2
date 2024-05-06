@@ -12,7 +12,6 @@ const ProjectModalSlide = ({ selectedProject }) => {
     );
   };
   const nextSlideBtn = () => {
-    console.log("$$", currentIndex);
     setCurrentIndex((prevIndex) =>
       prevIndex === repeatCount - 1 ? 0 : prevIndex + 1
     );

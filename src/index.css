@@ -230,14 +230,9 @@ html {
   border-right: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   #boxGroup:nth-child(1),
-  #boxGroup:nth-child(2) {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1024px) {
+  #boxGroup:nth-child(2),
   #boxGroup:nth-child(3) {
     display: none;
   }

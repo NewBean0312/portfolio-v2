@@ -9,6 +9,7 @@ import subProjectData from "../../json/subProjectData.json";
 import ProjectModalSlide from "./ProjectModalSlide";
 
 const ProjectModal = ({ isOpen, onClose, projectId, projectElement }) => {
+  // project 구분 및 필터링
   const selectedProject =
     projectElement === "main"
       ? mainProjectData.filter((data) => data.id === projectId)
