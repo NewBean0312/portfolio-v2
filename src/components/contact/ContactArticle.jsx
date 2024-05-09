@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactArticle = () => {
   return (
-    <article className="flex justify-center w-5/6 md:w-3/4 lg:w-2/3 mt-5 md:pt-24">
+    <article className="flex justify-center w-11/12 md:w-5/6 md:w-3/4 lg:w-2/3 mt-5 md:pt-24">
       <div className="flex flex-col justify-center w-full md:w-5/6 h-full lg:h-1/2 rounded-2xl border-4 border-solid border-mainColor">
         <div className="flex w-5/6 h-20 mx-auto pt-7 border-b-2 border-solid border-mainColor">
           <div className="italic md:text-2xl font-bold text-mainColor">Name :</div>
