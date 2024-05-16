@@ -111,6 +111,7 @@ const SkillsArticle = () => {
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
             <LogoImage imageSrc={`${process.env.PUBLIC_URL}/images/skills-img/sourcetree-logo.png`} imageAlt={"SourceTreeLogo"} logoId = {10} />
+            <LogoImage imageSrc={`${process.env.PUBLIC_URL}/images/skills-img/vercel-logo.png`} imageAlt={"VercelLogo"} logoId = {11} />
           </div>
           <EmptyBox />
           <EmptyBox />
