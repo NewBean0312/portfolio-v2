@@ -6,17 +6,21 @@ const ProjectSection = () => {
   // 프로젝트 이미지 URL
   const mainProjectUrl = [
     {
-      lpBoardUrl: `${process.env.PUBLIC_URL}/images/project-img/lp-record/naeiltour-lp.png`,
-      lpBoxUrl: `${process.env.PUBLIC_URL}/images/project-img/website-img/naeiltour-renewal-img-0.png`,
-    },
-    {
       lpBoardUrl: `${process.env.PUBLIC_URL}/images/project-img/lp-record/liverpool-lp.png`,
       lpBoxUrl: `${process.env.PUBLIC_URL}/images/project-img/website-img/liverpool-img-0.png`,
+    },
+    {
+      lpBoardUrl: `${process.env.PUBLIC_URL}/images/project-img/lp-record/naeiltour-lp.png`,
+      lpBoxUrl: `${process.env.PUBLIC_URL}/images/project-img/website-img/naeiltour-renewal-img-0.png`,
     },
     {
       lpBoardUrl: `${process.env.PUBLIC_URL}/images/project-img/lp-record/pyeongchang-lp.png`,
       lpBoxUrl: `${process.env.PUBLIC_URL}/images/project-img/website-img/PyeongChang2018-img-0.png`,
     },
+    {
+      lpBoardUrl: `${process.env.PUBLIC_URL}/images/project-img/lp-record/portfolio-lp.png`,
+      lpBoxUrl: `${process.env.PUBLIC_URL}/images/project-img/website-img/portfolio-img-0.png`,
+    }
   ];
   const subProjectUrl = [
     {

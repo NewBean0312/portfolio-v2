@@ -35,11 +35,11 @@ const ProjectSlideBanner = ({ projectUrl, projectElement }) => {
   const openModal = ({ index }) => {
     setIsModalOpen(true);
     setModalIndex(index);
-    document.body.style.overflow = 'hidden' // modal open 시, body의 overflow = hidden
+    document.body.style.overflow = "hidden"; // modal open 시, body의 overflow = hidden
   };
   const closeModal = () => {
     setIsModalOpen(false);
-    document.body.style.overflow = 'visible' // modal close 시, body의 overflow = visible
+    document.body.style.overflow = "visible"; // modal close 시, body의 overflow = visible
   };
 
   return (
@@ -60,8 +60,6 @@ const ProjectSlideBanner = ({ projectUrl, projectElement }) => {
               key={index}
               ref={mySlideElement}
               style={{
-                width: "300px",
-                height: "300px",
                 transition: "transform 0.5s, opacity 0.5s ease-in-out",
                 transform: `translateX(-${currentIndex * elementWidth}px)`,
               }}
@@ -71,12 +69,25 @@ const ProjectSlideBanner = ({ projectUrl, projectElement }) => {
                 alt={`lp-board-${index}`}
                 className="-z-10 absolute w-full h-full translate-x-[-80px]"
                 id="lpBoard"
+                style={{
+                  minWidth: "300px",
+                  maxWidth: "300px",
+                  minHeight: "300px",
+                  maxHeight: "300px",
+                }}
               />
               <img
                 src={project.lpBoxUrl}
                 alt={`lp-Box-${index}`}
-                className="w-full h-full p-4"
+                className="w-full h-full"
                 id={index === currentIndex ? "projectActive" : "project"}
+                style={{
+                  minWidth: "300px",
+                  maxWidth: "300px",
+                  minHeight: "300px",
+                  maxHeight: "300px",
+                  border: "1px solid #416d83"
+                }}
                 onClick={() => openModal({ index })}
               />
             </div>
