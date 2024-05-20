@@ -65,11 +65,11 @@ const ProjectModalSlide = ({ selectedProject }) => {
                 style={{
                   padding: isWideScreen
                     ? index >= selectedProject[0].mobileNumber
-                      ? "0 200px"
+                      ? "0 250px"
                       : "0 50px"
                     : index >= selectedProject[0].mobileNumber
                     ? "0 90px"
-                    : "0 30px",
+                    : "0 50px",
                 }}
               />
             </div>

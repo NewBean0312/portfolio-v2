@@ -38,8 +38,8 @@
   {
     "id": 3,
     "src": "portfolio-img",
-    "imageNumber": 4,
-    "mobileNumber": 3,
+    "imageNumber": 6,
+    "mobileNumber": 5,
     "name": "YuBeen's Portfolio",
     "content": "저를 알리기 위한 사이트이기에 가장 공이 많이 들었던 포트폴리오입니다. 재미있게 만들고 싶어 피아노를 컨셉으로 작업하였습니다. 기존에 JavaScript로 만들었지만 컴포넌트 분리와 SPA를 위해 리액트로 제작되었습니다. 또한, 커스텀 도메인을 구매하여 사이트를 배포하였습니다.",
     "webSiteURL": "newbeanportfolio.com",
