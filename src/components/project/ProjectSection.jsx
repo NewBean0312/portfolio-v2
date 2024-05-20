@@ -15,7 +15,7 @@ const ProjectSection = () => {
     },
     {
       lpBoardUrl: `${process.env.PUBLIC_URL}/images/project-img/lp-record/pyeongchang-lp.png`,
-      lpBoxUrl: `${process.env.PUBLIC_URL}/images/project-img/website-img/PyeongChang2018-img-0.png`,
+      lpBoxUrl: `${process.env.PUBLIC_URL}/images/project-img/website-img/pyeongchang2018-img-0.png`,
     },
     {
       lpBoardUrl: `${process.env.PUBLIC_URL}/images/project-img/lp-record/portfolio-lp.png`,

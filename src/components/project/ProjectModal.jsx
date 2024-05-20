@@ -20,7 +20,7 @@ const ProjectModal = ({ isOpen, onClose, projectId, projectElement }) => {
   // 웹사이트 링크 버튼
   const webSiteLinkButton = () => {
     window.open(
-      `https://newbean0312.github.io/${selectedProject[0].webSiteURL}/`,
+      `https://${selectedProject[0].webSiteURL}/`,
       "_blank"
     );
   };
