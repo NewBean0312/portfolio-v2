@@ -85,6 +85,10 @@ const SkillsArticle = () => {
               logoSrc={`${process.env.PUBLIC_URL}/images/skills-img/linux-logo.png`}
               logoName={"Linux"}
             />
+            <LogoImage
+              logoSrc={`${process.env.PUBLIC_URL}/images/skills-img/mysql-logo.png`}
+              logoName={"MySQL"}
+            />
           </div>
           <div className="flex-grow relative border-b-2 border-solid border-mainColor">
             <MobileNoteBoxTitle titleText={"Back-End"} />
@@ -95,9 +99,9 @@ const SkillsArticle = () => {
         </div>
         <div className="flex flex-grow flex-col relative border-r-8 border-solid border-mainColor">
           <div className="flex justify-around absolute w-full h-full">
-            <LogoImage
-              logoSrc={`${process.env.PUBLIC_URL}/images/skills-img/mysql-logo.png`}
-              logoName={"MySQL"}
+          <LogoImage
+              logoSrc={`${process.env.PUBLIC_URL}/images/skills-img/restapi-logo.png`}
+              logoName={"RESTAPI"}
             />
           </div>
           <EmptyBox />
