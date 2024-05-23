@@ -13,25 +13,25 @@ const LogoModal = ({ isOpen, onClose, logoSrc, logoName }) => {
       {selectedLogo.map((data, index) => (
         <div className="fixed inset-0 z-50 w-full h-full" key={index}>
           <div className="absolute inset-0 w-full h-full bg-dimmedLayer"></div>
-          <div className="flex justify-center items-center relative top-1/2 left-1/2 overflow-y-auto z-10 w-11/12 lg:w-2/5 h-3/5 lg:h-2/5 lg:rounded-3xl bg-backgroundColor transform -translate-x-1/2 -translate-y-1/2">
-            <div className="relative flex justify-center items-center p-7 w-full h-full">
+          <div className="flex justify-center items-center relative top-1/2 left-1/2 overflow-y-auto z-10 w-11/12 md:w-4/5 lg:w-1/2 xl:w-2/5 h-auto lg:rounded-3xl bg-backgroundColor transform -translate-x-1/2 -translate-y-1/2">
+            <div className="relative flex justify-around py-16 px-5 w-full h-full">
               <button
                 className="fixed top-5 right-5 z-10 w-8 h-8"
                 onClick={onClose}
               >
                 <FontAwesomeIcon icon={faXmark} className="w-full h-full" />
               </button>
-              <div className="w-1/3 md:w-1/2 lg:w-1/3 xl:w-1/2">
-                <div className="flex justify-center lg:block mb-5 lg:mb-0 mt-5 w-full">
+              <div className="w-1/3 xl:w-1/2">
+                <div className="mb-5 lg:mb-0 mt-5 w-full xl:w-2/3">
                   <img src={logoSrc} alt={logoName} />
                 </div>
               </div>
-              <div className="w-2/3 md:w-1/2 lg:w-2/3 pl-5 xl:pl-0 xl:w-1/2">
+              <div className="w-2/3 md:w-1/2 lg:w-2/3 xl:w-1/2 pl-5 xl:pl-0">
                 <h1 className="lg:pt-5 text-3xl text-mainColor">{data.name}</h1>
                 <div className="lg:h-4/5 pt-5 lg:pr-5">
                   <ul className="w-full overflow-y-auto font-DNFForgedBladeNormal text-lg text-textColor">
                     {data.content.map((contentData, index) => (
-                      <li key={index} className="mb-2">
+                      <li key={index} className="mb-1">
                         <FontAwesomeIcon icon={faCheck} className="pr-2 text-mainColor"/>
                         {contentData}
                       </li>
