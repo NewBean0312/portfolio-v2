@@ -1,5 +1,7 @@
 # 포트폴리오 React 버전
 
+- [포트폴리오 바로가기](https://newbeanportfolio.com)
+
 ---
 
 ### 계기
@@ -106,3 +108,21 @@
 - 설명란, 브라우저 링크, 기능, gitHub, Skill 등을 넣었습니다.
 - 개발 날짜 : 2024.04.28
 - [gitHub](https://github.com/NewBean0312/portfolio-v2/commit/264f8bf)
+
+12. Contact 페이지 작업
+
+- 기존에 있던 mail을 전송할 수 있는 section을 없애고, 이름, 전화번호, 이메일을 나타내는 section을 추가하였습니다.
+- 개발 날짜 : 2024.05.01
+- [gitHub](https://github.com/NewBean0312/portfolio-v2/commit/baf7cd8)
+
+13. 페이지 병합
+
+- 원래는 Router로 페이지를 편하게 이동할 수 있게 작업하였으나, 페이지 당 들어있는 콘텐츠가 많지 않다는 피드백을 받았습니다.
+- 그러하여, Router는 삭제한 뒤, 페이지를 병합하고 react-scroll를 추가하여 Link를 통해 해당 section으로 이동하게끔 작업하였습니다.
+- 개발 날짜 : 2024.05.03
+- [gitHub](https://github.com/NewBean0312/portfolio-v2/commit/07f4ca6)
+
+14. 작업 완료 및 배포
+
+- 작업을 완료한 후, 배포를 어떻게 진행할 까 고민 되었습니다.
+- 고민 끝에 vercel에 배포한 뒤, 커스텀 도메인을 구입하여 그 도메인에 연결하였습니다.
