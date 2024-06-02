@@ -1,61 +1,50 @@
 [
   {
     "name": "HTML",
-    "content" : [
-      "시멘틱 웹",
-      "웹 표준 및 웹 접근성",
-      "상황에 맞는 적절한 태그"
-    ]
+    "importance": "",
+    "content": ["시멘틱 웹", "웹 표준 및 웹 접근성", "상황에 맞는 적절한 태그"]
   },
   {
     "name": "CSS",
-    "content" : [
+    "importance": "",
+    "content": [
       "레이아웃 디자인",
       "애니메이션 및 전환 효과 구현",
       "반응형 디자인",
-      "미디어 쿼리 활용"
+      "미디어 쿼리 활용",
+      "Tailwind CSS 같은 CSS 프레임워크 사용가능"
     ]
-    
   },
   {
     "name": "JavaScript",
-    "content": [
-      "프레임워크 및 라이브러리 활용",
-      "JQuery",
-      "이벤트 처리"
-    ]
+    "importance": "★",
+    "content": ["프레임워크 및 라이브러리 활용", "JQuery", "이벤트 처리"]
   },
   {
     "name": "React",
-     "content": [
-      "Recoil",
-      "Router",
-      "MUI",
-      "Material-UI",
-      "시맨틱 UI",
-      "외부 API 활용"
-     ]
+    "importance": "★",
+    "content": [
+      "useState, useEffect 등 상태관리 관련 훅 사용가능",
+      "Atom, atomFamily 등 Recoil 라이브러리 사용가능",
+      "SPA에서 페이지 간 네비게이션을 구현하기 위한 Router 사용가능",
+      "MUI, Material-UI, 시맨틱 UI 등 UI 라이브러리 사용가능",
+      "RESTful API를 사용하여, 백엔드와 통신",
+      "Axios를 사용한 데이터 가져오기 및 처리"
+    ]
   },
   {
     "name": "Sass",
-    "content": [
-      "Sass 변수",
-      "Mixin",
-      "function",
-      "& 선택자"
-    ]
+    "importance": "",
+    "content": ["Sass 변수", "Mixin", "function", "& 선택자"]
   },
   {
     "name": "TypeScript",
-    "content": [
-      "인터페이스 및 함수 활용",
-      "클래스",
-      "제너릭",
-      "유틸리티 타입"
-    ]
+    "importance": "",
+    "content": ["인터페이스 및 함수 활용", "클래스", "제너릭", "유틸리티 타입"]
   },
   {
     "name": "Linux",
+    "importance": "",
     "content": [
       "Virtual Box",
       "웹 or DB 서버",
@@ -66,37 +55,27 @@
   },
   {
     "name": "MySQL",
-    "content": [
-      "SQLyog",
-      "JDBC"
-    ]
+    "importance": "",
+    "content": ["SQLyog", "JDBC"]
   },
   {
-    "name":"RESTAPI",
-    "content": [
-      "Axios",
-      "Postman",
-      "Express"
-    ]
+    "name": "RESTAPI",
+    "importance": "",
+    "content": ["Axios", "Postman", "Express"]
   },
   {
     "name": "Git",
-    "content": [
-      "버전 관리",
-      "reset과 revert",
-      "브랜치와 merge",
-      "rebase"
-    ]
+    "importance": "",
+    "content": ["버전 관리", "reset과 revert", "브랜치와 merge", "rebase"]
   },
   {
     "name": "GitHub",
-    "content": [
-      "프로젝트 배포",
-      "commit 활용"
-    ]
+    "importance": "",
+    "content": ["프로젝트 배포", "commit 활용"]
   },
   {
     "name": "SourceTree",
+    "importance": "",
     "content": [
       "브랜치 관리",
       "시각화 도구 활용",
@@ -106,9 +85,7 @@
   },
   {
     "name": "Vercel",
-    "content": [
-      "프로젝트 배포",
-      "커스텀 도메인 연결 및 배포"
-    ]
+    "importance": "",
+    "content": ["프로젝트 배포", "커스텀 도메인 연결 및 배포"]
   }
 ]

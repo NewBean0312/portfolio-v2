@@ -21,18 +21,21 @@ const LogoModal = ({ isOpen, onClose, logoSrc, logoName }) => {
               >
                 <FontAwesomeIcon icon={faXmark} className="w-full h-full" />
               </button>
-              <div className="w-1/3 xl:w-1/2">
+              <div className="flex justify-center w-1/3">
                 <div className="mb-5 lg:mb-0 mt-5 w-full xl:w-2/3">
                   <img src={logoSrc} alt={logoName} />
                 </div>
               </div>
-              <div className="w-2/3 md:w-1/2 lg:w-2/3 xl:w-1/2 pl-5 xl:pl-0">
-                <h1 className="lg:pt-5 text-3xl text-mainColor">{data.name}</h1>
+              <div className="w-2/3">
+                <h1 className="lg:pt-5 text-3xl text-mainColor">
+                  {data.name}
+                  <span className="ml-2">{data.importance}</span>
+                </h1>
                 <div className="lg:h-4/5 pt-5 lg:pr-5">
                   <ul className="w-full overflow-y-auto font-DNFForgedBladeNormal text-lg text-textColor">
                     {data.content.map((contentData, index) => (
-                      <li key={index} className="mb-1">
-                        <FontAwesomeIcon icon={faCheck} className="pr-2 text-mainColor"/>
+                      <li key={index} className="flex mb-1 keep-all">
+                        <FontAwesomeIcon icon={faCheck} className="block pr-2 text-mainColor" />
                         {contentData}
                       </li>
                     ))}

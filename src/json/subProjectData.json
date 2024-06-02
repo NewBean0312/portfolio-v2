@@ -4,11 +4,11 @@
     "src": "todolist-img",
     "imageNumber": 4,
     "mobileNumber": 3,
-    "name": "Todo List",
-    "content": "Todo List 일정 관리 프로젝트입니다. 처음 만든 React 프로젝트이며, 일정 추가 및 관리할 수 있는 사이트입니다. mui로 디자인을 작업했으며, atom, recoil로 상태를 저장하고, immer로 상태 관리 및 업데이트 하였습니다. 이 프로젝트는 개인 프로젝트입니다.",
-    "webSiteURL": "newbean0312.github.io/react-todo-list-v2-website/#/main",
-    "function": "올림픽 소개 및 종목 소개, 뉴스와 contact 섹션, 구글 지도 api 사용, 모바일 버전 반응형 디자인",
-    "gitHubURL": "react-todo-list-v2",
+    "name": "알리미",
+    "content": "일정 관리 사이트 알리미입니다. 처음 만든 React 프로젝트이며, 일정 추가 및 관리할 수 있는 사이트입니다. mui로 디자인을 작업했으며, atom, recoil로 상태를 저장하고, immer로 상태 관리 및 업데이트 하였습니다. 이 프로젝트는 개인 프로젝트입니다.",
+    "webSiteURL": "alimi-todolist.vercel.app/#/main",
+    "function": "일정 CRUD, 일정 완료 기능, 시간 및 작성순 정렬 기능",
+    "gitHubURL": "alimi-todolist",
     "skills": "React, Router, Atom, Recoil"
   },
   {

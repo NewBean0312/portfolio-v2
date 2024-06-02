@@ -36,6 +36,10 @@ html {
   font-family: "Libre Baskerville", serif;
 }
 
+.keep-all {
+  word-break: keep-all;
+}
+
 /* container */
 .section-container {
   width: 100%;
