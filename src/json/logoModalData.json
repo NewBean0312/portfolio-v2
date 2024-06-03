@@ -71,7 +71,8 @@
     "name": "Linux",
     "importance": "",
     "content": [
-      "Virtual Box",
+      "Virtual Box 활용",
+      "putty 사용",
       "웹 or DB 서버",
       "Shell 스크립트",
       "PHP의 DB 연동",
@@ -81,12 +82,15 @@
   {
     "name": "MySQL",
     "importance": "",
-    "content": ["SQLyog", "JDBC"]
+    "content": ["SQLyog를 사용한 DB 관리 및 처리", "JDBC"]
   },
   {
     "name": "RESTAPI",
     "importance": "",
-    "content": ["Axios", "Postman", "Express"]
+    "content": [
+      "Axios를 사용한 데이터 가져오기 및 관리",
+      "RESTful API를 사용하여, 백엔드와 통신"
+    ]
   },
   {
     "name": "Git",
