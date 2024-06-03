@@ -7,6 +7,7 @@
     "name": "알리미",
     "content": "일정 관리 사이트 알리미입니다. 처음 만든 React 프로젝트이며, 일정 추가 및 관리할 수 있는 사이트입니다. mui로 디자인을 작업했으며, atom, recoil로 상태를 저장하고, immer로 상태 관리 및 업데이트 하였습니다. 이 프로젝트는 개인 프로젝트입니다.",
     "webSiteURL": "alimi-todolist.vercel.app/#/main",
+    "team": "FE 1",
     "function": "일정 CRUD, 일정 완료 기능, 시간 및 작성순 정렬 기능",
     "gitHubURL": "alimi-todolist",
     "skills": "React, Router, Atom, Recoil"
@@ -19,6 +20,7 @@
     "name": "Pokemon Dex",
     "content": "PokeAPI를 이용한 포켓몬 도감입니다. React로 PokeAPI를 받아와서 작업하였습니다. 이 프로젝트에서 API의 활용방법을 알았으며, React의 Router를 이용하여, 페이지를 구분하였습니다. react-infinite-scroll-component을 사용하여, 리스트를 불러올 수 있게 작업하였습니다.",
     "webSiteURL": "newbean0312.github.io/pokemon-dex",
+    "team": "FE 1",
     "function": "메인 페이지, 상세 페이지",
     "gitHubURL": "pokemon-dex-code",
     "skills": "React, Router, PokeAPI"
@@ -31,6 +33,7 @@
     "name": "네이버 주문 페이지 클론코딩",
     "content": "네이버 주문 페이지 클론코딩입니다. 모바일버전 디자인의 주문 페이지를 제작하였으며, 이 프로젝트에서 Sass를 처음 사용하였으며, CSS보다 편리함을 알게 되었습니다. 기본 페이지, 주문 상세 페이지, 주문 내역 페이지를 제작하였습니다. 이 프로젝트는 개인 프로젝트입니다.",
     "webSiteURL": "newbean0312.github.io/order-page",
+    "team": "FE 1",
     "function": "메인 페이지, 주문 상세 기능, 주문 옵션 선택 기능, 주문 내역 기능",
     "gitHubURL": "order-page-code",
     "skills": "HTML, Sass, JavaScript"

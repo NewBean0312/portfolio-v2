@@ -64,6 +64,15 @@ const ProjectModal = ({ isOpen, onClose, projectId, projectElement }) => {
                   <li className="flex py-4 pr-2 xl:px-7">
                     <div className="w-1/3 xl:w-1/4 font-DNFForgedBladeBold md:text-lg xl:text-xl text-mainColor">
                       <FontAwesomeIcon icon={faCheck} className="mr-2" />
+                      Team
+                    </div>
+                    <div className="w-2/3 xl:w-3/4 font-DNFForgedBladeNormal xl:text-lg text-textColor">
+                      {selectedProject[0].team}
+                    </div>
+                  </li>
+                  <li className="flex py-4 pr-2 xl:px-7">
+                    <div className="w-1/3 xl:w-1/4 font-DNFForgedBladeBold md:text-lg xl:text-xl text-mainColor">
+                      <FontAwesomeIcon icon={faCheck} className="mr-2" />
                       Function
                     </div>
                     <div className="w-2/3 xl:w-3/4 font-DNFForgedBladeNormal xl:text-lg text-textColor">
